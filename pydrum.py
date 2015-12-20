@@ -10,12 +10,13 @@ def ReadADC(spi, ch):
     adc = spi.xfer2([1,(8+ch)<<4,0])  
     data = ((adc[1]&3)<<8) + adc[2]  
     return data  
-  
-# Convert data to voltage level  
-def ReadVolts(spi, data,deci):
-    volts = (data * 3.3) / float(1023)  
-    volts = round(volts,deci)  
-    return volts  
+
+
+def detect_peak(changes):
+	if changes[0] >= 2 and changes[1] >= 2 and changes[2] <= -2 and changes[3] <= -2:
+		print changes
+		return True
+	return False
 
 
 if __name__ == "__main__":
@@ -27,21 +28,25 @@ if __name__ == "__main__":
 	snd = pygame.mixer.Sound("./sn_Wet_b.ogg")
 
 	last_value = 0
-	last_change = 0
+	# store recent 4 changes
+	changes = [0] * 4
 	try:
 		while True:
 			value = ReadADC(spi, 0)
 			if value > 5:
 				change = value - last_value
-				print value, ", change",change
-				if last_change > 0 and change < last_change and last_change > 20 and change > 0:
+				if detect_peak(changes):
 					print "play!!!!"
 					volume = 2 * float(value) / 1024
 					channel = snd.play()
 					if channel:
 						channel.set_volume(volume)
 				last_value = value
-				last_change = change
+			else:
+				change = 0
+
+			changes.append(change)
+			del changes[0]
 	except KeyboardInterrupt:
 		pass
 	spi.close()
