@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import time
 import spidev
+import sys
 import matplotlib.pyplot as plt
 
 # Read SPI data from MCP3008, Channel must be an integer 0-7  
@@ -25,7 +26,7 @@ if __name__ == "__main__":
 	print("start")
 	x = []
 	y = []
-	d = []
+	changes = []
 	i = 0
 	record = False
 	last_value = 0
@@ -36,7 +37,7 @@ if __name__ == "__main__":
 		if record:
 			x.append(i)
 			y.append(value)
-			d.append((value - last_value))
+			changes.append((value - last_value))
 			last_value = value
 			print(i, value)
 			i += 1
@@ -44,25 +45,26 @@ if __name__ == "__main__":
 				print("stop")
 				break
 
+	annote_interval = int(len(x) / 15)
+	if annote_interval == 0:
+		annote_interval = 1
+
 	# intensity vs time
 	plt.plot(x, y)
-	#for i, j in zip(x, y):
-	#	plt.annotate(str(j), xy=(i, j))
+	for i, j in zip(x, y):
+		if i % annote_interval == 0:
+			plt.annotate(str(j), xy=(i, j))
 
 	# change vs time
-	plt.plot(x, d)
-	#for i, j in zip(x, d):
-	#	plt.annotate(str(j), xy=(i, j))
+	plt.plot(x, changes)
+	for i, j in zip(x, changes):
+		if i % annote_interval == 0:
+			plt.annotate(str(j), xy=(i, j))
 
-	plt.show()
+	if len(sys.argv) > 1:
+		filename = sys.argv[1]
+		plt.savefig(filename)
+	else:
+		plt.show()
 
-	'''
-	try:
-		while True:
-			value = ReadADC(spi, 0)
-			print("ADC", value, float(value)*100/1024, "%")
-			time.sleep(0.1)
-	except KeyboardInterrupt:
-		pass
-	'''
 	spi.close()
