@@ -63,7 +63,12 @@ if __name__ == "__main__":
 
 	if len(sys.argv) > 1:
 		filename = sys.argv[1]
-		plt.savefig(filename)
+		plt.savefig(filename + ".png")
+		
+		with open(filename + ".csv", "w") as f:
+			f.write('"time","intensity","change"\n')
+			for row in zip(x, y, changes):
+				f.write("%d,%d,%d\n" % row)
 	else:
 		plt.show()
 
