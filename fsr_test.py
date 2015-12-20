@@ -32,7 +32,7 @@ if __name__ == "__main__":
 	last_value = 0
 	while True:
 		value = ReadADC(spi, 0)
-		if value > 2:
+		if value > 10:
 			record = True
 		if record:
 			x.append(i)

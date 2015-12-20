@@ -2,6 +2,7 @@
 import pygame
 import time
 import spidev
+import math
 
 # Read SPI data from MCP3008, Channel must be an integer 0-7  
 def ReadADC(spi, ch):
@@ -12,9 +13,9 @@ def ReadADC(spi, ch):
     return data  
 
 
-def detect_peak(changes):
-	if changes[0] >= 2 and changes[1] >= 2 and changes[2] <= -2 and changes[3] <= -2:
-		print changes
+def detect_peak(value, changes):
+	if value >= 30 and changes[0] > 0 and changes[1] < 0 and (changes[0] - changes[1]) > 10:
+		print value, changes
 		return True
 	return False
 
@@ -29,15 +30,16 @@ if __name__ == "__main__":
 
 	last_value = 0
 	# store recent 4 changes
-	changes = [0] * 4
+	changes = [0] * 2
 	try:
 		while True:
 			value = ReadADC(spi, 0)
 			if value > 5:
 				change = value - last_value
-				if detect_peak(changes):
+				if detect_peak(value, changes):
 					print "play!!!!"
 					volume = 2 * float(value) / 1024
+					print volume
 					channel = snd.play()
 					if channel:
 						channel.set_volume(volume)
