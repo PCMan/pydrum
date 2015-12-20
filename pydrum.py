@@ -33,10 +33,10 @@ if __name__ == "__main__":
 			value = ReadADC(spi, 0)
 			if value > 5:
 				change = value - last_value
-				# print value, ", change",change
+				print value, ", change",change
 				if last_change > 0 and change < last_change and last_change > 20 and change > 0:
 					print "play!!!!"
-					volume = float(value) / 1024
+					volume = 2 * float(value) / 1024
 					channel = snd.play()
 					if channel:
 						channel.set_volume(volume)
