@@ -1,0 +1,151 @@
+<drumkit_info>
+    <name>TR808909</name>
+    <author>Artemio &lt;artemio@artemio.net&gt;</author>
+    <info>Based on selected sounds from classic Roland TR-808 and TR-909 beatboxes of early 1980s.</info>
+    <instrumentList>
+        <instrument>
+            <id>0</id>
+            <filename>808_bd.wav</filename>
+            <name>808 bd</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>1</id>
+            <filename>909_bd.wav</filename>
+            <name>909 bd</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>2</id>
+            <filename>808_sd.wav</filename>
+            <name>808 sd</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>3</id>
+            <filename>909_sd.wav</filename>
+            <name>909 sd</name>
+            <volume>0.640000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>4</id>
+            <filename>808_rim.wav</filename>
+            <name>808 rim</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>5</id>
+            <filename>909_rim.wav</filename>
+            <name>909 rim</name>
+            <volume>0.530000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>6</id>
+            <filename>808_clap.wav</filename>
+            <name>808 clap</name>
+            <volume>0.880000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>7</id>
+            <filename>909_clap.wav</filename>
+            <name>909 clap</name>
+            <volume>0.850000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>8</id>
+            <filename>808_mid_tom.wav</filename>
+            <name>808 tom</name>
+            <volume>0.680000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>9</id>
+            <filename>909_hi_tom.wav</filename>
+            <name>909 tom</name>
+            <volume>0.590000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>10</id>
+            <filename>808_chh.wav</filename>
+            <name>808 chh</name>
+            <volume>0.800000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>11</id>
+            <filename>909_chh.wav</filename>
+            <name>909 chh</name>
+            <volume>0.480000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>12</id>
+            <filename>808_ohh.wav</filename>
+            <name>808 ohh</name>
+            <volume>0.510000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>13</id>
+            <filename>909_ohh.wav</filename>
+            <name>909 ohh</name>
+            <volume>0.550000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>14</id>
+            <filename>808_mar.wav</filename>
+            <name>808 marac</name>
+            <volume>0.670000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>15</id>
+            <filename>808_cow.wav</filename>
+            <name>808 cowb</name>
+            <volume>0.840000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+    </instrumentList>
+</drumkit_info>

@@ -1,0 +1,151 @@
+<drumkit_info>
+    <name>3355606kit</name>
+    <author>Artemio &lt;http://artemio.net&gt;</author>
+    <info>Based on sounds from famous and classic beatboxes of 1970s and 1980s - Roland TR-606, TR-33 and Boss DR-55.</info>
+    <instrumentList>
+        <instrument>
+            <id>0</id>
+            <filename>606bass.wav</filename>
+            <name>kick 606</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>1</id>
+            <filename>rhythm33_bd.wav</filename>
+            <name>kick 33</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>2</id>
+            <filename>606SNAR.wav</filename>
+            <name>sn 606</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>0.900000</pan_R>
+        </instrument>
+        <instrument>
+            <id>3</id>
+            <filename>rhythm33_sn.wav</filename>
+            <name>sn 33</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>4</id>
+            <filename>dr55snar.wav</filename>
+            <name>sn 55</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>0.800000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>5</id>
+            <filename>dr55rim.wav</filename>
+            <name>rim 55</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>0.900000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>6</id>
+            <filename>tr606_low_tom.wav</filename>
+            <name>t 606 low</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>0.700000</pan_R>
+        </instrument>
+        <instrument>
+            <id>7</id>
+            <filename>tr606_high_tom.wav</filename>
+            <name>t 606 hi</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>0.600000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>8</id>
+            <filename>rhythm33_tom.wav</filename>
+            <name>t 33</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>9</id>
+            <filename>606chat.wav</filename>
+            <name>chh 606</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>10</id>
+            <filename>rhythm33_ch.wav</filename>
+            <name>chh 33</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>0.700000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>11</id>
+            <filename>dr55hat.wav</filename>
+            <name>chh 55</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>12</id>
+            <filename>rhythm33_oh.wav</filename>
+            <name>ohh 33</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>13</id>
+            <filename>606ohatacc.wav</filename>
+            <name>ohh 606</name>
+            <volume>0.860000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>0.600000</pan_R>
+        </instrument>
+        <instrument>
+            <id>14</id>
+            <filename>606cymb.wav</filename>
+            <name>cym 606</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>0.600000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>15</id>
+            <filename>rhythm33_cow.wav</filename>
+            <name>cow 33</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+    </instrumentList>
+</drumkit_info>

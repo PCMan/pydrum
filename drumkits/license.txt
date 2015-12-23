@@ -1,0 +1,5 @@
+These drum kits are taken from Hydrogen project.
+http://www.hydrogen-music.org/
+
+The original data files are licensed under GPL2/GPL/CC license.
+We converted them to *.ogg format for use in pydrum.

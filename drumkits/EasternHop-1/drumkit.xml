@@ -1,0 +1,151 @@
+<drumkit_info>
+    <name>EasternHop-1</name>
+    <author>Artemio &lt;artemio@artemio.net&gt;</author>
+    <info>A perfect kit for ethnic hip-hop: contains groovy kicks, snares and hats along with indian tabla drums</info>
+    <instrumentList>
+        <instrument>
+            <id>0</id>
+            <filename>kk1.wav</filename>
+            <name>kick 1</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>1</id>
+            <filename>kk2.wav</filename>
+            <name>kick 2</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>2</id>
+            <filename>kk3.wav</filename>
+            <name>kick 3</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>3</id>
+            <filename>sn1.wav</filename>
+            <name>snare 1</name>
+            <volume>0.800000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>4</id>
+            <filename>sn2.wav</filename>
+            <name>snare 2</name>
+            <volume>0.790000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>5</id>
+            <filename>sn3.wav</filename>
+            <name>snare 3</name>
+            <volume>0.810000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>6</id>
+            <filename>sn4.wav</filename>
+            <name>snare 4</name>
+            <volume>0.870000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>7</id>
+            <filename>chh1.wav</filename>
+            <name>chh 1</name>
+            <volume>0.690000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>8</id>
+            <filename>chh2.wav</filename>
+            <name>chh 2</name>
+            <volume>0.320000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>0.500000</pan_R>
+        </instrument>
+        <instrument>
+            <id>9</id>
+            <filename>chh3.wav</filename>
+            <name>chh 3</name>
+            <volume>0.360000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>0.300000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>10</id>
+            <filename>chh4.wav</filename>
+            <name>chh 4</name>
+            <volume>0.540000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>11</id>
+            <filename>dr_tb_1.wav</filename>
+            <name>tabla low</name>
+            <volume>0.720000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>12</id>
+            <filename>dr_tb_2.wav</filename>
+            <name>tabla side</name>
+            <volume>0.570000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>13</id>
+            <filename>dr_tb_3.wav</filename>
+            <name>tabla body</name>
+            <volume>0.790000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>14</id>
+            <filename>dr_tb_4.wav</filename>
+            <name>tabla top</name>
+            <volume>0.880000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>15</id>
+            <filename>lo-fi-cow.wav</filename>
+            <name>lo-fi cow</name>
+            <volume>0.880000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+    </instrumentList>
+</drumkit_info>

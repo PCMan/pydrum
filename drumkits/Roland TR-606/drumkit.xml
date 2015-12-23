@@ -1,0 +1,189 @@
+<drumkit_info>
+    <name>Roland TR-606</name>
+    <author>Hollow Sun</author>
+    <info>Roland TR-606 Drumatix is a classic analog beatbox made in around 1983 to compliment the TB-303 Bassline synthesizer. Sounds recorded by Steve Howell (Hollow Sun), Hydrogen kit created by Artemiy Pavlov (Sineshine).</info>
+    <instrumentList>
+        <instrument>
+            <id>0</id>
+            <name>TR-606 KIck</name>
+            <volume>1</volume>
+            <isMuted>false</isMuted>
+            <isLocked>false</isLocked>
+            <pan_L>1</pan_L>
+            <pan_R>1</pan_R>
+            <randomPitchFactor>0</randomPitchFactor>
+            <gain>1</gain>
+            <filterActive>false</filterActive>
+            <filterCutoff>1</filterCutoff>
+            <filterResonance>0</filterResonance>
+            <Attack>0</Attack>
+            <Decay>0</Decay>
+            <Sustain>1</Sustain>
+            <Release>1000</Release>
+            <muteGroup>-1</muteGroup>
+            <layer>
+                <filename>TR606 kick.flac</filename>
+                <min>0</min>
+                <max>1</max>
+                <gain>1</gain>
+                <pitch>0</pitch>
+            </layer>
+        </instrument>
+        <instrument>
+            <id>1</id>
+            <name>TR-606 Snare</name>
+            <volume>1</volume>
+            <isMuted>false</isMuted>
+            <isLocked>false</isLocked>
+            <pan_L>1</pan_L>
+            <pan_R>1</pan_R>
+            <randomPitchFactor>0</randomPitchFactor>
+            <gain>1</gain>
+            <filterActive>false</filterActive>
+            <filterCutoff>1</filterCutoff>
+            <filterResonance>0</filterResonance>
+            <Attack>0</Attack>
+            <Decay>0</Decay>
+            <Sustain>1</Sustain>
+            <Release>1000</Release>
+            <muteGroup>-1</muteGroup>
+            <layer>
+                <filename>TR606 snare.flac</filename>
+                <min>0</min>
+                <max>1</max>
+                <gain>1</gain>
+                <pitch>0</pitch>
+            </layer>
+        </instrument>
+        <instrument>
+            <id>2</id>
+            <name>TR-606 Low Tom</name>
+            <volume>1</volume>
+            <isMuted>false</isMuted>
+            <isLocked>false</isLocked>
+            <pan_L>1</pan_L>
+            <pan_R>0.6</pan_R>
+            <randomPitchFactor>0</randomPitchFactor>
+            <gain>1</gain>
+            <filterActive>false</filterActive>
+            <filterCutoff>1</filterCutoff>
+            <filterResonance>0</filterResonance>
+            <Attack>0</Attack>
+            <Decay>0</Decay>
+            <Sustain>1</Sustain>
+            <Release>1000</Release>
+            <muteGroup>-1</muteGroup>
+            <layer>
+                <filename>TR606 lo tom.flac</filename>
+                <min>0</min>
+                <max>1</max>
+                <gain>1</gain>
+                <pitch>0</pitch>
+            </layer>
+        </instrument>
+        <instrument>
+            <id>3</id>
+            <name>TR-606 Hi Tom</name>
+            <volume>1</volume>
+            <isMuted>false</isMuted>
+            <isLocked>false</isLocked>
+            <pan_L>0.62</pan_L>
+            <pan_R>1</pan_R>
+            <randomPitchFactor>0</randomPitchFactor>
+            <gain>1</gain>
+            <filterActive>false</filterActive>
+            <filterCutoff>1</filterCutoff>
+            <filterResonance>0</filterResonance>
+            <Attack>0</Attack>
+            <Decay>0</Decay>
+            <Sustain>1</Sustain>
+            <Release>1000</Release>
+            <muteGroup>-1</muteGroup>
+            <layer>
+                <filename>TR606 hi tom.flac</filename>
+                <min>0</min>
+                <max>1</max>
+                <gain>1</gain>
+                <pitch>0</pitch>
+            </layer>
+        </instrument>
+        <instrument>
+            <id>4</id>
+            <name>TR-808 Closed Hat</name>
+            <volume>1</volume>
+            <isMuted>false</isMuted>
+            <isLocked>false</isLocked>
+            <pan_L>1</pan_L>
+            <pan_R>1</pan_R>
+            <randomPitchFactor>0</randomPitchFactor>
+            <gain>1</gain>
+            <filterActive>false</filterActive>
+            <filterCutoff>1</filterCutoff>
+            <filterResonance>0</filterResonance>
+            <Attack>0</Attack>
+            <Decay>0</Decay>
+            <Sustain>1</Sustain>
+            <Release>1000</Release>
+            <muteGroup>0</muteGroup>
+            <layer>
+                <filename>TR606 cl hat.flac</filename>
+                <min>0</min>
+                <max>1</max>
+                <gain>1</gain>
+                <pitch>0</pitch>
+            </layer>
+        </instrument>
+        <instrument>
+            <id>5</id>
+            <name>TR-606 Open Hat</name>
+            <volume>0.99</volume>
+            <isMuted>false</isMuted>
+            <isLocked>false</isLocked>
+            <pan_L>1</pan_L>
+            <pan_R>1</pan_R>
+            <randomPitchFactor>0</randomPitchFactor>
+            <gain>1</gain>
+            <filterActive>false</filterActive>
+            <filterCutoff>1</filterCutoff>
+            <filterResonance>0</filterResonance>
+            <Attack>0</Attack>
+            <Decay>0</Decay>
+            <Sustain>1</Sustain>
+            <Release>1000</Release>
+            <muteGroup>0</muteGroup>
+            <layer>
+                <filename>TR606 open hat.flac</filename>
+                <min>0</min>
+                <max>1</max>
+                <gain>1</gain>
+                <pitch>0</pitch>
+            </layer>
+        </instrument>
+        <instrument>
+            <id>6</id>
+            <name>TR-606 Cymbal</name>
+            <volume>1</volume>
+            <isMuted>false</isMuted>
+            <isLocked>false</isLocked>
+            <pan_L>1</pan_L>
+            <pan_R>1</pan_R>
+            <randomPitchFactor>0</randomPitchFactor>
+            <gain>1</gain>
+            <filterActive>false</filterActive>
+            <filterCutoff>1</filterCutoff>
+            <filterResonance>0</filterResonance>
+            <Attack>0</Attack>
+            <Decay>0</Decay>
+            <Sustain>1</Sustain>
+            <Release>1000</Release>
+            <muteGroup>-1</muteGroup>
+            <layer>
+                <filename>TR606 cymbal.flac</filename>
+                <min>0</min>
+                <max>1</max>
+                <gain>1</gain>
+                <pitch>0</pitch>
+            </layer>
+        </instrument>
+    </instrumentList>
+</drumkit_info>

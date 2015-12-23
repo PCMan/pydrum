@@ -1,0 +1,151 @@
+<drumkit_info>
+    <name>Techno-1</name>
+    <author>Artemio &lt;http://artemio.net&gt;</author>
+    <info>TechnoLectric drum kit, featuring classic TR-77 sounds, processed 808/909 kicks and other synth drums</info>
+    <instrumentList>
+        <instrument>
+            <id>0</id>
+            <filename>909_xOver_4a.wav</filename>
+            <name>909 x-over</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>1</id>
+            <filename>808_xOver_2.wav</filename>
+            <name>808 x-over</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>2</id>
+            <filename>sim_k02-0.wav</filename>
+            <name>sim kick 2</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>3</id>
+            <filename>rhythm77_bd.wav</filename>
+            <name>77 kick</name>
+            <volume>0.970000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>4</id>
+            <filename>rhythm77_sn.wav</filename>
+            <name>77 snare</name>
+            <volume>0.920000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>5</id>
+            <filename>909sn.wav</filename>
+            <name>909 snare</name>
+            <volume>0.860000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>6</id>
+            <filename>909clap.wav</filename>
+            <name>909 clap</name>
+            <volume>0.920000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>7</id>
+            <filename>rhythm77_low_tom.wav</filename>
+            <name>77 tom low</name>
+            <volume>0.900000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>8</id>
+            <filename>rhythm77_high_tom.wav</filename>
+            <name>77 tom hi</name>
+            <volume>0.960000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>9</id>
+            <filename>rhythm77_ch.wav</filename>
+            <name>77 chh</name>
+            <volume>0.930000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>10</id>
+            <filename>rhythm77_oh.wav</filename>
+            <name>77 ohh</name>
+            <volume>0.860000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>11</id>
+            <filename>909ohh.wav</filename>
+            <name>909 ohh</name>
+            <volume>0.890000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>12</id>
+            <filename>fx_09.wav</filename>
+            <name>FX 1</name>
+            <volume>0.800000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>13</id>
+            <filename>fx_10.wav</filename>
+            <name>FX 2</name>
+            <volume>0.800000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>14</id>
+            <filename>fx_17b.wav</filename>
+            <name>FX 3</name>
+            <volume>0.800000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>15</id>
+            <filename>sim_bass_23_01.wav</filename>
+            <name>sim bass 2</name>
+            <volume>0.800000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+    </instrumentList>
+</drumkit_info>

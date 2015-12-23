@@ -1,0 +1,327 @@
+<drumkit_info>
+    <name>UltraAcousticKit</name>
+    <author>Artemio - http://artemio.net</author>
+    <info>This is a kit created from outstanding ROM waves found in Roland Fantom-S music production workstation.</info>
+    <instrumentList>
+        <instrument>
+            <id>0</id>
+            <filename>Kick_Reg_1a.wav</filename>
+            <name>Kick Reg 1a</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>1</id>
+            <filename>Kick_Reg_1b.wav</filename>
+            <name>Kick Reg 1b</name>
+            <volume>0.970000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>2</id>
+            <filename>Kick_Rock.wav</filename>
+            <name>Kick Rock</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>3</id>
+            <filename>Snare_Reg_1a.wav</filename>
+            <name>Snare Reg 1a</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>4</id>
+            <filename>Snare_Reg_1b.wav</filename>
+            <name>Snare Reg 1b</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>5</id>
+            <filename>Snare_Reg_1c.wav</filename>
+            <name>Snare Reg 1c</name>
+            <volume>0.960000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>6</id>
+            <filename>Snare_Reg_1flam.wav</filename>
+            <name>Snare Reg 1flam</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>0.780000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>7</id>
+            <filename>Snare_Reg_1ghost.wav</filename>
+            <name>Snare Reg 1ghost</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>0.960000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>8</id>
+            <filename>Snare_Rock.wav</filename>
+            <name>Snare Rock</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>0.960000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>9</id>
+            <filename>Snare_Rock_ghost.wav</filename>
+            <name>Snare Rock ghost</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>0.900000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>10</id>
+            <filename>Stick.wav</filename>
+            <name>Rock Stick</name>
+            <volume>0.960000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>0.900000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>11</id>
+            <filename>Tom_Low.wav</filename>
+            <name>Tom Low</name>
+            <volume>0.960000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>0.460000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>12</id>
+            <filename>Tom_Mid.wav</filename>
+            <name>Tom Mid</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>13</id>
+            <filename>Tom_Hi.wav</filename>
+            <name>Tom Hi</name>
+            <volume>0.960000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>0.540000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>14</id>
+            <filename>Tom_Low_flam.wav</filename>
+            <name>Tom Low flam</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>0.560000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>15</id>
+            <filename>Tom_Mid_flam.wav</filename>
+            <name>Tom Mid flam</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>0.900000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>16</id>
+            <filename>Tom_Hi_flam.wav</filename>
+            <name>Tom Hi flam</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>0.580000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>17</id>
+            <filename>HH_1_closed_a.wav</filename>
+            <name>HH 1 closed a</name>
+            <volume>0.770000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>18</id>
+            <filename>HH_1_closed_b.wav</filename>
+            <name>HH 1 closed b</name>
+            <volume>0.800000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>19</id>
+            <filename>HH_1_open.wav</filename>
+            <name>HH 1 open</name>
+            <volume>0.850000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>20</id>
+            <filename>HH_2_closed_a.wav</filename>
+            <name>HH 2 closed a</name>
+            <volume>0.870000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>21</id>
+            <filename>HH_2_closed_b.wav</filename>
+            <name>HH 2 closed b</name>
+            <volume>0.810000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>22</id>
+            <filename>HH_2_open.wav</filename>
+            <name>HH 2 open</name>
+            <volume>0.810000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>23</id>
+            <filename>Ride_Cup.wav</filename>
+            <name>Ride Cup</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>24</id>
+            <filename>Ride_Side.wav</filename>
+            <name>Ride Side</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>25</id>
+            <filename>Crash_1.wav</filename>
+            <name>Crash 1</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>26</id>
+            <filename>Crash_2.wav</filename>
+            <name>Crash 2</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>27</id>
+            <filename>Crash_3.wav</filename>
+            <name>Crash 3</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>28</id>
+            <filename>CowBell.wav</filename>
+            <name>CowBell</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>29</id>
+            <filename>Tamb_1.wav</filename>
+            <name>Tamb 1</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>30</id>
+            <filename>Tamb_2.wav</filename>
+            <name>Tamb 2</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+        <instrument>
+            <id>31</id>
+            <filename>Tamb_3.wav</filename>
+            <name>Tamb 3</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+            <exclude />
+        </instrument>
+    </instrumentList>
+</drumkit_info>

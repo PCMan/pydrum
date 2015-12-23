@@ -1,0 +1,151 @@
+<drumkit_info>
+    <name>HipHop-1</name>
+    <author>Artemio &lt;artemio@artemio.net&gt;</author>
+    <info>HipHop drum set chopped from Roland SR-JV80-12 HipHop Collection expansion board</info>
+    <instrumentList>
+        <instrument>
+            <id>0</id>
+            <filename>kick_1.wav</filename>
+            <name>kick 1</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>1</id>
+            <filename>kick_2.wav</filename>
+            <name>kick 2</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>2</id>
+            <filename>kick_3.wav</filename>
+            <name>kick 3</name>
+            <volume>0.980000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>3</id>
+            <filename>snare_1.wav</filename>
+            <name>snare 1</name>
+            <volume>0.940000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>4</id>
+            <filename>snare_2.wav</filename>
+            <name>snare 2</name>
+            <volume>0.940000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>5</id>
+            <filename>snare_3.wav</filename>
+            <name>snare 3</name>
+            <volume>0.920000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>6</id>
+            <filename>snare_4.wav</filename>
+            <name>snare 4</name>
+            <volume>0.930000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>7</id>
+            <filename>snare_scr.wav</filename>
+            <name>snare scratch</name>
+            <volume>0.980000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>8</id>
+            <filename>snare_side.wav</filename>
+            <name>snare side</name>
+            <volume>0.610000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>9</id>
+            <filename>clap_1.wav</filename>
+            <name>clap</name>
+            <volume>0.790000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>10</id>
+            <filename>chh_1.wav</filename>
+            <name>chh 1</name>
+            <volume>0.920000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>11</id>
+            <filename>chh_2.wav</filename>
+            <name>chh 2</name>
+            <volume>0.800000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>12</id>
+            <filename>chh_3.wav</filename>
+            <name>chh 3</name>
+            <volume>0.920000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>13</id>
+            <filename>ohh_3.wav</filename>
+            <name>ohh 3</name>
+            <volume>0.850000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>14</id>
+            <filename>hit_smear_1.wav</filename>
+            <name>hit 1</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>15</id>
+            <filename>hit_smear_3.wav</filename>
+            <name>hit 3</name>
+            <volume>0.880000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+    </instrumentList>
+</drumkit_info>

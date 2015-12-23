@@ -1,0 +1,151 @@
+<drumkit_info>
+    <name>TD-7kit</name>
+    <author>Artemio &lt;http://artemio.net&gt;</author>
+    <info>Kit based on samples from Roland TD-7 percussion sound module of middle 1990s.</info>
+    <instrumentList>
+        <instrument>
+            <id>0</id>
+            <filename>K-015 Dry 1.wav</filename>
+            <name>kick dry</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>1</id>
+            <filename>K-087 909 Acoustic.wav</filename>
+            <name>kick 909</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>2</id>
+            <filename>S-145 Light Maple.wav</filename>
+            <name>snare maple</name>
+            <volume>1.000000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>3</id>
+            <filename>S-149 Memphis.wav</filename>
+            <name>snare memphis</name>
+            <volume>0.920000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>4</id>
+            <filename>S-172 Real 4.wav</filename>
+            <name>snare real</name>
+            <volume>0.940000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>5</id>
+            <filename>S-177 Reggae 4.wav</filename>
+            <name>snare raggae</name>
+            <volume>0.810000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>6</id>
+            <filename>H-308 Lax Closed.wav</filename>
+            <name>chh lax</name>
+            <volume>0.850000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>7</id>
+            <filename>H-300 Acoustic Closed Inner.wav</filename>
+            <name>chh inner</name>
+            <volume>0.710000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>8</id>
+            <filename>H-301 Acoustic Closed Outer.wav</filename>
+            <name>chh outer</name>
+            <volume>0.620000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>9</id>
+            <filename>P-353 Bongo High Mute.wav</filename>
+            <name>bongo hi</name>
+            <volume>0.730000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>0.600000</pan_R>
+        </instrument>
+        <instrument>
+            <id>10</id>
+            <filename>P-355 Bongo Low Mute.wav</filename>
+            <name>bongo low</name>
+            <volume>0.850000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>0.400000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>11</id>
+            <filename>C-335 Rock Ride Bell.wav</filename>
+            <name>ride rock</name>
+            <volume>0.850000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>12</id>
+            <filename>C-336 Brush Ride.wav</filename>
+            <name>ride brush</name>
+            <volume>0.680000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>13</id>
+            <filename>C-325 Crash 2.wav</filename>
+            <name>crash</name>
+            <volume>0.800000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>14</id>
+            <filename>P-343 Tambourine 2.wav</filename>
+            <name>tamb</name>
+            <volume>0.670000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+        <instrument>
+            <id>15</id>
+            <filename>M-437 Gamelan 2.wav</filename>
+            <name>gamelan</name>
+            <volume>0.620000</volume>
+            <isMuted>false</isMuted>
+            <pan_L>1.000000</pan_L>
+            <pan_R>1.000000</pan_R>
+        </instrument>
+    </instrumentList>
+</drumkit_info>
