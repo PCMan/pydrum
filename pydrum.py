@@ -2,6 +2,7 @@
 import pygame
 import time
 import spidev
+import RPi.GPIO as GPIO
 
 _spi = None
 
@@ -50,8 +51,8 @@ class PyDrum:
 			# check if we are at the peak of the input wave form
 			if self.last_change > 3 and change < -3:
 				if self.sound:
-					print "---- play ----"
-					volume = 2 * float(value) / 1024
+					volume = 3 * float(value) / 1024
+					print "---- play ----", volume
 					channel = self.sound.play()
 					if channel:
 						channel.set_volume(volume)
@@ -67,13 +68,19 @@ class PyDrum:
 
 if __name__ == "__main__":
 	init()
+	
+	GPIO.setmode(GPIO.BOARD)
+	GPIO.setup(7, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 	drums = [
 		PyDrum(0, "drumkits/GMkit/sn_Wet_b.ogg"),
 		PyDrum(7, "drumkits/GMkit/kick_Dry_b.ogg"),
+		# PyDrum(7, "drumkits/GMkit/hhp_Dry_a.ogg"),
 	]
 	try:
 		while True:
+			btn_pressed = GPIO.input(7)
+			#print btn_pressed
 			for drum in drums:
 				drum.process_input()
 	except KeyboardInterrupt:
