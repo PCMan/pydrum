@@ -3,6 +3,7 @@ import pygame
 import time
 import spidev
 import RPi.GPIO as GPIO
+import numpy as np
 
 _spi = None
 
@@ -30,28 +31,43 @@ class PyDrum:
 		self.spi_channel = spi_channel
 		self.last_value = 0
 		self.last_change = 0
+		self.noise_level = 0.0
+		self.noise_stdev = 0.0
+		self.threshold = 10.0
 		if sound_file:
 			self.set_sound_file(sound_file)
 
-	'''
-	def detect_peak(changes):
-		if changes[0] >= 2 and changes[1] >= 2 and changes[2] <= -2 and changes[3] <= -2:
-			print changes
-			return True
-		return False
-	'''
+	# detect baseline noise and get a threshold value
+	def calibrate(self, duration=3):
+		global _spi
+		start_time = time.time()
+		values = []
+		while True:
+			value = read_adc(_spi, self.spi_channel)
+			values.append(value)
+			if (time.time() - start_time) >= duration:
+				break
+		self.noise_mean = np.mean(values)
+		self.noise_stdev = np.std(values)
+		# Assume the noise has a normal distribution
+		# Prob(x<Z)=99%, so we use 2.33 here
+		# Prob(x<Z)=98%, so we use 2.06 here
+		self.threshold = self.noise_mean + self.noise_stdev * 2.06
+		print "Noise level", self.noise_mean, "+/-", self.noise_stdev
+		print "threshold", self.threshold
 
 	def process_input(self):
 		global _spi
 		value = read_adc(_spi, self.spi_channel)
 		change = value - self.last_value
-		if value > 20: # noises can cause low values
-			if self.spi_channel == 0:
-				print value, change
+		if value > self.threshold: # noises can cause low values
+			# if self.spi_channel == 7:
+			# 	print value, change
 			# check if we are at the peak of the input wave form
 			if self.last_change > 3 and change < -3:
 				if self.sound:
 					volume = 3 * float(value) / 1024
+					volume = float(value)/100
 					print "---- play ----", volume
 					channel = self.sound.play()
 					if channel:
@@ -70,16 +86,20 @@ if __name__ == "__main__":
 	init()
 	
 	GPIO.setmode(GPIO.BOARD)
-	GPIO.setup(7, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+	# GPIO.setup(7, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 	drums = [
-		PyDrum(0, "drumkits/GMkit/sn_Wet_b.ogg"),
-		PyDrum(7, "drumkits/GMkit/kick_Dry_b.ogg"),
-		# PyDrum(7, "drumkits/GMkit/hhp_Dry_a.ogg"),
+		PyDrum(7, "drumkits/GMkit/sn_Wet_b.ogg"),
+		# PyDrum(0, "drumkits/GMkit/kick_Dry_b.ogg"),
+		# PyDrum(0, "drumkits/GMkit/hhp_Dry_a.ogg"),
 	]
+
 	try:
+		for drum in drums:
+			drum.calibrate()
+
 		while True:
-			btn_pressed = GPIO.input(7)
+			# btn_pressed = GPIO.input(7)
 			#print btn_pressed
 			for drum in drums:
 				drum.process_input()
