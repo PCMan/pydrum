@@ -26,15 +26,19 @@ if __name__ == "__main__":
 	print("start")
 	x = []
 	y = []
-	for i in range(50000):
+	start_time = time.time()
+	while True:
+		current_time = time.time()
+		elapsed = current_time - start_time
 		value = ReadADC(spi, 7)
-		x.append(i)
+		x.append(elapsed)
 		y.append(value)
-		#if len(x) >= 5000:
-		#	x.pop(0)
-		#	y.pop(0)
-		print(i, value)
-		# time.sleep(0.1)
+		if elapsed > 15.0:
+			break
+		print("%.4f" % elapsed, value)
+		delta = time.time() - current_time
+		#if delta < 0.001:
+		#	time.sleep(0.001 - delta)
 
 	annote_interval = int(len(x) / 10)
 	if annote_interval == 0:

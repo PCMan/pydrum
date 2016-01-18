@@ -51,8 +51,7 @@ class PyDrum:
 		self.noise_stdev = np.std(values)
 		# Assume the noise has a normal distribution
 		# Prob(x<Z)=99%, so we use 2.33 here
-		# Prob(x<Z)=98%, so we use 2.06 here
-		self.threshold = self.noise_mean + self.noise_stdev * 2.06
+		self.threshold = self.noise_mean + self.noise_stdev * 2.33
 		print "Noise level", self.noise_mean, "+/-", self.noise_stdev
 		print "threshold", self.threshold
 
