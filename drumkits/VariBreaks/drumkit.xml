@@ -22,7 +22,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>VP Kick 1.flac</filename>
+                <filename>VP Kick 1.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -48,7 +48,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>VP Kick 2.flac</filename>
+                <filename>VP Kick 2.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -74,7 +74,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>VP Kick 3.flac</filename>
+                <filename>VP Kick 3.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -100,7 +100,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>VP Snare 1.flac</filename>
+                <filename>VP Snare 1.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -126,7 +126,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>VP Snare 2.flac</filename>
+                <filename>VP Snare 2.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -152,7 +152,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>VP Snare 3.flac</filename>
+                <filename>VP Snare 3.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -178,7 +178,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>VP Tom Low.flac</filename>
+                <filename>VP Tom Low.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -204,7 +204,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>VP Tom Mid.flac</filename>
+                <filename>VP Tom Mid.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -230,7 +230,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>VP Tom Hi.flac</filename>
+                <filename>VP Tom Hi.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -256,7 +256,7 @@
             <Release>1000</Release>
             <muteGroup>0</muteGroup>
             <layer>
-                <filename>VP Hat 1 Cl.flac</filename>
+                <filename>VP Hat 1 Cl.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -282,7 +282,7 @@
             <Release>1000</Release>
             <muteGroup>0</muteGroup>
             <layer>
-                <filename>VP Hat 1 Pd.flac</filename>
+                <filename>VP Hat 1 Pd.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -308,7 +308,7 @@
             <Release>1000</Release>
             <muteGroup>0</muteGroup>
             <layer>
-                <filename>VP Hat 1 Op.flac</filename>
+                <filename>VP Hat 1 Op.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -334,7 +334,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>VP Hat 2 Cl.flac</filename>
+                <filename>VP Hat 2 Cl.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -360,7 +360,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>VP Hat 3 Cl.flac</filename>
+                <filename>VP Hat 3 Cl.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -386,7 +386,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>VP Click.flac</filename>
+                <filename>VP Click.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -412,7 +412,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>VP Drum.flac</filename>
+                <filename>VP Drum.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>

@@ -34,7 +34,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>808_Kick_Long.flac</filename>
+    <filename>808_Kick_Long.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -66,7 +66,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>808_Kick_Short.flac</filename>
+    <filename>808_Kick_Short.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -98,7 +98,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>808_Snare_1.flac</filename>
+    <filename>808_Snare_1.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -130,7 +130,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>808_Snare_2.flac</filename>
+    <filename>808_Snare_2.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -162,7 +162,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>808_Clap.flac</filename>
+    <filename>808_Clap.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -194,7 +194,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>808_Tom_Low.flac</filename>
+    <filename>808_Tom_Low.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -226,7 +226,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>808_Tom_Mid.flac</filename>
+    <filename>808_Tom_Mid.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -258,7 +258,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>808_Tom_Hi.flac</filename>
+    <filename>808_Tom_Hi.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -290,7 +290,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>808_Hat_Closed.flac</filename>
+    <filename>808_Hat_Closed.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -322,7 +322,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>808_Hat_Pedal.flac</filename>
+    <filename>808_Hat_Pedal.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -354,7 +354,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>808_Hat_Open.flac</filename>
+    <filename>808_Hat_Open.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -386,7 +386,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>808_Cymbal.flac</filename>
+    <filename>808_Cymbal.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -418,7 +418,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>808_Shaker.flac</filename>
+    <filename>808_Shaker.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -450,7 +450,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>808_Conga.flac</filename>
+    <filename>808_Conga.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -482,7 +482,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>808_Clave.flac</filename>
+    <filename>808_Clave.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -514,7 +514,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>808_Cowbell.flac</filename>
+    <filename>808_Cowbell.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>

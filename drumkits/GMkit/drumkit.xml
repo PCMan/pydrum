@@ -34,7 +34,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>kick_Dry_b.flac</filename>
+    <filename>kick_Dry_b.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -66,7 +66,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>stick_Woody.flac</filename>
+    <filename>stick_Woody.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -98,7 +98,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>sn_Jazz_c.flac</filename>
+    <filename>sn_Jazz_c.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -130,7 +130,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>clap_Dry_c.flac</filename>
+    <filename>clap_Dry_c.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -162,7 +162,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>sn_Wet_b.flac</filename>
+    <filename>sn_Wet_b.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -194,7 +194,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>tom_Rock_lo.flac</filename>
+    <filename>tom_Rock_lo.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -226,7 +226,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>hhc_Dry_a.flac</filename>
+    <filename>hhc_Dry_a.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -258,7 +258,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>tom_Rock_mid.flac</filename>
+    <filename>tom_Rock_mid.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -290,7 +290,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>hhp_Dry_a.flac</filename>
+    <filename>hhp_Dry_a.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -322,7 +322,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>tom_Rock_hi.flac</filename>
+    <filename>tom_Rock_hi.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -354,7 +354,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>hhc_Rock_b.flac</filename>
+    <filename>hhc_Rock_b.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -386,7 +386,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>misc_Cowbell.flac</filename>
+    <filename>misc_Cowbell.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -418,7 +418,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>cym_Jazz.flac</filename>
+    <filename>cym_Jazz.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -450,7 +450,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>cra_Rock_a.flac</filename>
+    <filename>cra_Rock_a.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -482,7 +482,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>cym_Rock_b.flac</filename>
+    <filename>cym_Rock_b.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>
@@ -514,7 +514,7 @@ p, li { white-space: pre-wrap; }
    <FX3Level>0</FX3Level>
    <FX4Level>0</FX4Level>
    <layer>
-    <filename>cra_Jazz.flac</filename>
+    <filename>cra_Jazz.ogg</filename>
     <min>0</min>
     <max>1</max>
     <gain>1</gain>

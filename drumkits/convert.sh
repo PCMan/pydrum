@@ -18,4 +18,10 @@ rm $f
 done
 
 
+for f in `find . -name '*.xml' -print`
+do
+sed -i -e 's/\.\(wav\|flac\)/\.ogg/g' $f
+done
+
+
 IFS=$SAVEIFS

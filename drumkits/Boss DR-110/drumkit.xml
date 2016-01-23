@@ -22,7 +22,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>dr110kik.flac</filename>
+                <filename>dr110kik.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -48,7 +48,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>dr110snr.flac</filename>
+                <filename>dr110snr.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -74,7 +74,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>dr110clp.flac</filename>
+                <filename>dr110clp.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -100,7 +100,7 @@
             <Release>1000</Release>
             <muteGroup>0</muteGroup>
             <layer>
-                <filename>dr110cht.flac</filename>
+                <filename>dr110cht.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -126,7 +126,7 @@
             <Release>1000</Release>
             <muteGroup>0</muteGroup>
             <layer>
-                <filename>dr110oht.flac</filename>
+                <filename>dr110oht.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -152,7 +152,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>dr110cym.flac</filename>
+                <filename>dr110cym.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>

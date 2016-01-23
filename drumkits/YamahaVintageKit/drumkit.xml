@@ -20,28 +20,28 @@
             <Release>1000</Release>
             <exclude />
             <layer>
-                <filename>Kik_04.flac</filename>
+                <filename>Kik_04.ogg</filename>
                 <min>0.760684</min>
                 <max>1</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>Kik_02.flac</filename>
+                <filename>Kik_02.ogg</filename>
                 <min>0.534188</min>
                 <max>0.773504</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>Kik_03.flac</filename>
+                <filename>Kik_03.ogg</filename>
                 <min>0.286325</min>
                 <max>0.534188</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>Kik_04.flac</filename>
+                <filename>Kik_04.ogg</filename>
                 <min>0</min>
                 <max>0.286325</max>
                 <gain>1</gain>
@@ -65,28 +65,28 @@
             <Release>1000</Release>
             <exclude />
             <layer>
-                <filename>SN_B_04.flac</filename>
+                <filename>SN_B_04.ogg</filename>
                 <min>0.764957</min>
                 <max>1</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>SN_B_03.flac</filename>
+                <filename>SN_B_03.ogg</filename>
                 <min>0.512821</min>
                 <max>0.760684</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>SN_B_02.flac</filename>
+                <filename>SN_B_02.ogg</filename>
                 <min>0.311966</min>
                 <max>0.512821</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>SN_B_01.flac</filename>
+                <filename>SN_B_01.ogg</filename>
                 <min>0</min>
                 <max>0.311966</max>
                 <gain>1</gain>
@@ -110,28 +110,28 @@
             <Release>1000</Release>
             <exclude />
             <layer>
-                <filename>Flr_Tom_04.flac</filename>
+                <filename>Flr_Tom_04.ogg</filename>
                 <min>0.722222</min>
                 <max>1</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>Flr_Tom_03.flac</filename>
+                <filename>Flr_Tom_03.ogg</filename>
                 <min>0.512821</min>
                 <max>0.726496</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>Flr_Tom_02.flac</filename>
+                <filename>Flr_Tom_02.ogg</filename>
                 <min>0.269231</min>
                 <max>0.521368</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>Flr_Tom_01.flac</filename>
+                <filename>Flr_Tom_01.ogg</filename>
                 <min>0</min>
                 <max>0.269231</max>
                 <gain>1</gain>
@@ -155,28 +155,28 @@
             <Release>1000</Release>
             <exclude />
             <layer>
-                <filename>Mid_Tom_04.flac</filename>
+                <filename>Mid_Tom_04.ogg</filename>
                 <min>0.773504</min>
                 <max>1</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>Mid_Tom_03.flac</filename>
+                <filename>Mid_Tom_03.ogg</filename>
                 <min>0.521368</min>
                 <max>0.769231</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>Mid_Tom_02.flac</filename>
+                <filename>Mid_Tom_02.ogg</filename>
                 <min>0.260684</min>
                 <max>0.525641</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>Mid_Tom_01.flac</filename>
+                <filename>Mid_Tom_01.ogg</filename>
                 <min>0</min>
                 <max>0.264957</max>
                 <gain>1</gain>
@@ -200,28 +200,28 @@
             <Release>1000</Release>
             <exclude />
             <layer>
-                <filename>Hi_Tom_04.flac</filename>
+                <filename>Hi_Tom_04.ogg</filename>
                 <min>0.764957</min>
                 <max>1</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>Hi_Tom_03.flac</filename>
+                <filename>Hi_Tom_03.ogg</filename>
                 <min>0.482906</min>
                 <max>0.764957</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>Hi_Tom_02.flac</filename>
+                <filename>Hi_Tom_02.ogg</filename>
                 <min>0.200855</min>
                 <max>0.482906</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>Hi_Tom_01.flac</filename>
+                <filename>Hi_Tom_01.ogg</filename>
                 <min>0</min>
                 <max>0.205128</max>
                 <gain>1</gain>
@@ -245,21 +245,21 @@
             <Release>1000</Release>
             <exclude />
             <layer>
-                <filename>Cl_HH_03.flac</filename>
+                <filename>Cl_HH_03.ogg</filename>
                 <min>0.649573</min>
                 <max>1</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>Cl_HH_02.flac</filename>
+                <filename>Cl_HH_02.ogg</filename>
                 <min>0.307692</min>
                 <max>0.649573</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>Cl_HH_01.flac</filename>
+                <filename>Cl_HH_01.ogg</filename>
                 <min>0</min>
                 <max>0.307692</max>
                 <gain>1</gain>
@@ -283,28 +283,28 @@
             <Release>1000</Release>
             <exclude />
             <layer>
-                <filename>Op_HH_04.flac</filename>
+                <filename>Op_HH_04.ogg</filename>
                 <min>0.75641</min>
                 <max>1</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>Op_HH_03.flac</filename>
+                <filename>Op_HH_03.ogg</filename>
                 <min>0.487179</min>
                 <max>0.752137</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>Op_HH_02.flac</filename>
+                <filename>Op_HH_02.ogg</filename>
                 <min>0.24359</min>
                 <max>0.482906</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>Op_HH_01.flac</filename>
+                <filename>Op_HH_01.ogg</filename>
                 <min>0</min>
                 <max>0.24359</max>
                 <gain>1</gain>
@@ -328,28 +328,28 @@
             <Release>1000</Release>
             <exclude />
             <layer>
-                <filename>Rd_Cymb_04_bell.flac</filename>
+                <filename>Rd_Cymb_04_bell.ogg</filename>
                 <min>0.760684</min>
                 <max>1</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>Rd_Cymb_03.flac</filename>
+                <filename>Rd_Cymb_03.ogg</filename>
                 <min>0.517094</min>
                 <max>0.764957</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>Rd_Cymb_02.flac</filename>
+                <filename>Rd_Cymb_02.ogg</filename>
                 <min>0.235043</min>
                 <max>0.525641</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>Rd_Cymb_01.flac</filename>
+                <filename>Rd_Cymb_01.ogg</filename>
                 <min>0</min>
                 <max>0.235043</max>
                 <gain>1</gain>
@@ -373,21 +373,21 @@
             <Release>1000</Release>
             <exclude />
             <layer>
-                <filename>Szl_Cym_03_bell.flac</filename>
+                <filename>Szl_Cym_03_bell.ogg</filename>
                 <min>0.739316</min>
                 <max>1</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>Szl_Cym_02.flac</filename>
+                <filename>Szl_Cym_02.ogg</filename>
                 <min>0.358974</min>
                 <max>0.735043</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>Szl_Cym_01.flac</filename>
+                <filename>Szl_Cym_01.ogg</filename>
                 <min>0</min>
                 <max>0.354701</max>
                 <gain>1</gain>
@@ -411,14 +411,14 @@
             <Release>1000</Release>
             <exclude />
             <layer>
-                <filename>Crsh_Cym_02.flac</filename>
+                <filename>Crsh_Cym_02.ogg</filename>
                 <min>0.57265</min>
                 <max>1</max>
                 <gain>1</gain>
                 <pitch>0</pitch>
             </layer>
             <layer>
-                <filename>Crsh_Cym_01.flac</filename>
+                <filename>Crsh_Cym_01.ogg</filename>
                 <min>0</min>
                 <max>0.57265</max>
                 <gain>1</gain>

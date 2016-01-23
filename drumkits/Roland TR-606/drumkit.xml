@@ -22,7 +22,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR606 kick.flac</filename>
+                <filename>TR606 kick.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -48,7 +48,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR606 snare.flac</filename>
+                <filename>TR606 snare.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -74,7 +74,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR606 lo tom.flac</filename>
+                <filename>TR606 lo tom.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -100,7 +100,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR606 hi tom.flac</filename>
+                <filename>TR606 hi tom.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -126,7 +126,7 @@
             <Release>1000</Release>
             <muteGroup>0</muteGroup>
             <layer>
-                <filename>TR606 cl hat.flac</filename>
+                <filename>TR606 cl hat.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -152,7 +152,7 @@
             <Release>1000</Release>
             <muteGroup>0</muteGroup>
             <layer>
-                <filename>TR606 open hat.flac</filename>
+                <filename>TR606 open hat.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -178,7 +178,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR606 cymbal.flac</filename>
+                <filename>TR606 cymbal.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>

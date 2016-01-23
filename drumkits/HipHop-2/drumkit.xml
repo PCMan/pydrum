@@ -5,7 +5,7 @@
     <instrumentList>
         <instrument>
             <id>0</id>
-            <filename>kick_1.wav</filename>
+            <filename>kick_1.ogg</filename>
             <name>kick 1</name>
             <volume>1.000000</volume>
             <isMuted>false</isMuted>
@@ -14,7 +14,7 @@
         </instrument>
         <instrument>
             <id>1</id>
-            <filename>kick_2.wav</filename>
+            <filename>kick_2.ogg</filename>
             <name>kick 2</name>
             <volume>1.000000</volume>
             <isMuted>false</isMuted>
@@ -23,7 +23,7 @@
         </instrument>
         <instrument>
             <id>2</id>
-            <filename>kick_3.wav</filename>
+            <filename>kick_3.ogg</filename>
             <name>kick 3</name>
             <volume>1.000000</volume>
             <isMuted>false</isMuted>
@@ -32,7 +32,7 @@
         </instrument>
         <instrument>
             <id>3</id>
-            <filename>kick_4.wav</filename>
+            <filename>kick_4.ogg</filename>
             <name>kick 4</name>
             <volume>1.000000</volume>
             <isMuted>false</isMuted>
@@ -41,7 +41,7 @@
         </instrument>
         <instrument>
             <id>4</id>
-            <filename>sn_3.wav</filename>
+            <filename>sn_3.ogg</filename>
             <name>snare 1</name>
             <volume>0.940000</volume>
             <isMuted>false</isMuted>
@@ -50,7 +50,7 @@
         </instrument>
         <instrument>
             <id>5</id>
-            <filename>sn_1.wav</filename>
+            <filename>sn_1.ogg</filename>
             <name>snare 2</name>
             <volume>0.890000</volume>
             <isMuted>false</isMuted>
@@ -59,7 +59,7 @@
         </instrument>
         <instrument>
             <id>6</id>
-            <filename>sn_2.wav</filename>
+            <filename>sn_2.ogg</filename>
             <name>snare 3</name>
             <volume>0.880000</volume>
             <isMuted>false</isMuted>
@@ -68,7 +68,7 @@
         </instrument>
         <instrument>
             <id>7</id>
-            <filename>sn_4.wav</filename>
+            <filename>sn_4.ogg</filename>
             <name>snare 4</name>
             <volume>0.940000</volume>
             <isMuted>false</isMuted>
@@ -77,7 +77,7 @@
         </instrument>
         <instrument>
             <id>8</id>
-            <filename>rim_1.wav</filename>
+            <filename>rim_1.ogg</filename>
             <name>rim</name>
             <volume>0.810000</volume>
             <isMuted>false</isMuted>
@@ -86,7 +86,7 @@
         </instrument>
         <instrument>
             <id>9</id>
-            <filename>funk_clap_1.wav</filename>
+            <filename>funk_clap_1.ogg</filename>
             <name>funk clap</name>
             <volume>0.710000</volume>
             <isMuted>false</isMuted>
@@ -95,7 +95,7 @@
         </instrument>
         <instrument>
             <id>10</id>
-            <filename>chh_1.wav</filename>
+            <filename>chh_1.ogg</filename>
             <name>chh 1</name>
             <volume>0.810000</volume>
             <isMuted>false</isMuted>
@@ -104,7 +104,7 @@
         </instrument>
         <instrument>
             <id>11</id>
-            <filename>chh_2.wav</filename>
+            <filename>chh_2.ogg</filename>
             <name>chh 2</name>
             <volume>0.850000</volume>
             <isMuted>false</isMuted>
@@ -113,7 +113,7 @@
         </instrument>
         <instrument>
             <id>12</id>
-            <filename>chh_3.wav</filename>
+            <filename>chh_3.ogg</filename>
             <name>chh 3</name>
             <volume>0.800000</volume>
             <isMuted>false</isMuted>
@@ -122,7 +122,7 @@
         </instrument>
         <instrument>
             <id>13</id>
-            <filename>chh_4.wav</filename>
+            <filename>chh_4.ogg</filename>
             <name>chh 4</name>
             <volume>0.800000</volume>
             <isMuted>false</isMuted>
@@ -131,7 +131,7 @@
         </instrument>
         <instrument>
             <id>14</id>
-            <filename>fx_kick.wav</filename>
+            <filename>fx_kick.ogg</filename>
             <name>fx kick</name>
             <volume>0.730000</volume>
             <isMuted>false</isMuted>
@@ -140,7 +140,7 @@
         </instrument>
         <instrument>
             <id>15</id>
-            <filename>606_tom.wav</filename>
+            <filename>606_tom.ogg</filename>
             <name>606 tom</name>
             <volume>0.920000</volume>
             <isMuted>false</isMuted>

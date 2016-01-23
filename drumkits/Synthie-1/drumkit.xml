@@ -5,7 +5,7 @@
     <instrumentList>
         <instrument>
             <id>0</id>
-            <filename>sim_k02-0.wav</filename>
+            <filename>sim_k02-0.ogg</filename>
             <name>sim kick</name>
             <volume>1.000000</volume>
             <isMuted>false</isMuted>
@@ -14,7 +14,7 @@
         </instrument>
         <instrument>
             <id>1</id>
-            <filename>909_xOver_1.wav</filename>
+            <filename>909_xOver_1.ogg</filename>
             <name>hard 909</name>
             <volume>1.000000</volume>
             <isMuted>false</isMuted>
@@ -23,7 +23,7 @@
         </instrument>
         <instrument>
             <id>2</id>
-            <filename>xp909_clap1.wav</filename>
+            <filename>xp909_clap1.ogg</filename>
             <name>xp909 clap</name>
             <volume>0.800000</volume>
             <isMuted>false</isMuted>
@@ -32,7 +32,7 @@
         </instrument>
         <instrument>
             <id>3</id>
-            <filename>xp909_tom1.wav</filename>
+            <filename>xp909_tom1.ogg</filename>
             <name>xp909 tom</name>
             <volume>0.800000</volume>
             <isMuted>false</isMuted>
@@ -41,7 +41,7 @@
         </instrument>
         <instrument>
             <id>4</id>
-            <filename>tom_01.wav</filename>
+            <filename>tom_01.ogg</filename>
             <name>sim tom</name>
             <volume>0.610000</volume>
             <isMuted>false</isMuted>
@@ -50,7 +50,7 @@
         </instrument>
         <instrument>
             <id>5</id>
-            <filename>chh_02.wav</filename>
+            <filename>chh_02.ogg</filename>
             <name>sim chh 1</name>
             <volume>0.810000</volume>
             <isMuted>false</isMuted>
@@ -59,7 +59,7 @@
         </instrument>
         <instrument>
             <id>6</id>
-            <filename>chh_01.wav</filename>
+            <filename>chh_01.ogg</filename>
             <name>sim chh 2</name>
             <volume>0.780000</volume>
             <isMuted>false</isMuted>
@@ -68,7 +68,7 @@
         </instrument>
         <instrument>
             <id>7</id>
-            <filename>juno6_ohh_soft.wav</filename>
+            <filename>juno6_ohh_soft.ogg</filename>
             <name>juno6 chh</name>
             <volume>0.630000</volume>
             <isMuted>false</isMuted>
@@ -77,7 +77,7 @@
         </instrument>
         <instrument>
             <id>8</id>
-            <filename>juno6_perc_01.wav</filename>
+            <filename>juno6_perc_01.ogg</filename>
             <name>juno6 perc</name>
             <volume>0.800000</volume>
             <isMuted>false</isMuted>
@@ -86,7 +86,7 @@
         </instrument>
         <instrument>
             <id>9</id>
-            <filename>sw_01.wav</filename>
+            <filename>sw_01.ogg</filename>
             <name>sweep blip</name>
             <volume>0.800000</volume>
             <isMuted>false</isMuted>
@@ -95,7 +95,7 @@
         </instrument>
         <instrument>
             <id>10</id>
-            <filename>drum_01.wav</filename>
+            <filename>drum_01.ogg</filename>
             <name>am drum 1</name>
             <volume>0.940000</volume>
             <isMuted>false</isMuted>
@@ -104,7 +104,7 @@
         </instrument>
         <instrument>
             <id>11</id>
-            <filename>drum_08_01.wav</filename>
+            <filename>drum_08_01.ogg</filename>
             <name>am drum 2</name>
             <volume>0.800000</volume>
             <isMuted>false</isMuted>
@@ -113,7 +113,7 @@
         </instrument>
         <instrument>
             <id>12</id>
-            <filename>juno6_xO_7.wav</filename>
+            <filename>juno6_xO_7.ogg</filename>
             <name>juno6 shape</name>
             <volume>1.000000</volume>
             <isMuted>false</isMuted>
@@ -122,7 +122,7 @@
         </instrument>
         <instrument>
             <id>13</id>
-            <filename>synth_01.wav</filename>
+            <filename>synth_01.ogg</filename>
             <name>sim synth</name>
             <volume>0.640000</volume>
             <isMuted>false</isMuted>
@@ -131,7 +131,7 @@
         </instrument>
         <instrument>
             <id>14</id>
-            <filename>fx_18-2.wav</filename>
+            <filename>fx_18-2.ogg</filename>
             <name>sim FX</name>
             <volume>0.540000</volume>
             <isMuted>false</isMuted>
@@ -140,7 +140,7 @@
         </instrument>
         <instrument>
             <id>15</id>
-            <filename>am_sine_01_2.wav</filename>
+            <filename>am_sine_01_2.ogg</filename>
             <name>am sine bell</name>
             <volume>0.400000</volume>
             <isMuted>false</isMuted>

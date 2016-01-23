@@ -12,7 +12,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>1Conga Hi.wav</filename>
+                <filename>1Conga Hi.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -28,7 +28,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>1Conga Hi Mute.wav</filename>
+                <filename>1Conga Hi Mute.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -44,7 +44,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>1Conga Lo.wav</filename>
+                <filename>1Conga Lo.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -60,7 +60,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>2Conga Hi.wav</filename>
+                <filename>2Conga Hi.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -76,7 +76,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>2Conga Mute Hi.wav</filename>
+                <filename>2Conga Mute Hi.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -92,7 +92,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>2Conga Lo.wav</filename>
+                <filename>2Conga Lo.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -108,7 +108,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>2Conga Mute Lo.wav</filename>
+                <filename>2Conga Mute Lo.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -124,7 +124,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>2Conga Slap.wav</filename>
+                <filename>2Conga Slap.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -140,7 +140,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>1Bongo High.wav</filename>
+                <filename>1Bongo High.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -156,7 +156,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>1Bongo Low.wav</filename>
+                <filename>1Bongo Low.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -172,7 +172,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>2Bongo High.wav</filename>
+                <filename>2Bongo High.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -188,7 +188,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>2Bongo Low.wav</filename>
+                <filename>2Bongo Low.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -204,7 +204,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>3Bongo High.wav</filename>
+                <filename>3Bongo High.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -220,7 +220,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>3Bongo Low.wav</filename>
+                <filename>3Bongo Low.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -236,7 +236,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>Agogo Hi.wav</filename>
+                <filename>Agogo Hi.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -252,7 +252,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>Agogo Lo.wav</filename>
+                <filename>Agogo Lo.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -268,7 +268,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>Timbale Hi.wav</filename>
+                <filename>Timbale Hi.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -284,7 +284,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>Timbale Lo.wav</filename>
+                <filename>Timbale Lo.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -300,7 +300,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>1Guiro Long.wav</filename>
+                <filename>1Guiro Long.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -316,7 +316,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>1Guiro Short.wav</filename>
+                <filename>1Guiro Short.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -332,7 +332,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>2Guiro Long.wav</filename>
+                <filename>2Guiro Long.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -348,7 +348,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>2Guiro Short.wav</filename>
+                <filename>2Guiro Short.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -364,7 +364,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>3Guiro Long.wav</filename>
+                <filename>3Guiro Long.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -380,7 +380,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>3Guiro Short.wav</filename>
+                <filename>3Guiro Short.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -396,7 +396,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>Cabasa Up.wav</filename>
+                <filename>Cabasa Up.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -412,7 +412,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>Cabasa Down.wav</filename>
+                <filename>Cabasa Down.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -428,7 +428,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>Cabasa Cut.wav</filename>
+                <filename>Cabasa Cut.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -444,7 +444,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>Claves.wav</filename>
+                <filename>Claves.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -460,7 +460,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>Maracas.wav</filename>
+                <filename>Maracas.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -476,7 +476,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>Vibra Slap.wav</filename>
+                <filename>Vibra Slap.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -492,7 +492,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>Coffecup.wav</filename>
+                <filename>Coffecup.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -508,7 +508,7 @@
             <pan_R>1</pan_R>
             <exclude />
             <layer>
-                <filename>CowBell.wav</filename>
+                <filename>CowBell.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>

@@ -22,7 +22,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>BassDrum1.flac</filename>
+                <filename>BassDrum1.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -48,7 +48,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>BassDrum2.flac</filename>
+                <filename>BassDrum2.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -74,7 +74,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>RimShot.flac</filename>
+                <filename>RimShot.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -100,7 +100,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>Snare1.flac</filename>
+                <filename>Snare1.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -126,7 +126,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>Snare2.flac</filename>
+                <filename>Snare2.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -152,7 +152,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>HandClap.flac</filename>
+                <filename>HandClap.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -178,7 +178,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>LowTom.flac</filename>
+                <filename>LowTom.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -204,7 +204,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>MedTom.flac</filename>
+                <filename>MedTom.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -230,7 +230,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>HiTom.flac</filename>
+                <filename>HiTom.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -256,7 +256,7 @@
             <Release>1000</Release>
             <muteGroup>0</muteGroup>
             <layer>
-                <filename>HhC.flac</filename>
+                <filename>HhC.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -282,7 +282,7 @@
             <Release>1000</Release>
             <muteGroup>0</muteGroup>
             <layer>
-                <filename>HhO.flac</filename>
+                <filename>HhO.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -308,7 +308,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>Ride.flac</filename>
+                <filename>Ride.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -334,7 +334,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>Crash.flac</filename>
+                <filename>Crash.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -360,7 +360,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>Tamb.flac</filename>
+                <filename>Tamb.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -386,7 +386,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>CowBell.flac</filename>
+                <filename>CowBell.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>

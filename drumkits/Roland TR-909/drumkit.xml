@@ -22,7 +22,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>909 Kick_long.flac</filename>
+                <filename>909 Kick_long.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -48,7 +48,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>909 Kick_short.flac</filename>
+                <filename>909 Kick_short.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -74,7 +74,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>909 Rim.flac</filename>
+                <filename>909 Rim.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -100,7 +100,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>909 Snare 1.flac</filename>
+                <filename>909 Snare 1.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -126,7 +126,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>909 Snare 2.flac</filename>
+                <filename>909 Snare 2.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -152,7 +152,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>909 Clap.flac</filename>
+                <filename>909 Clap.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -178,7 +178,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>909 Tom_lo.flac</filename>
+                <filename>909 Tom_lo.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -204,7 +204,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>909 Tom_mid.flac</filename>
+                <filename>909 Tom_mid.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -230,7 +230,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>909 Tom_hi.flac</filename>
+                <filename>909 Tom_hi.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -256,7 +256,7 @@
             <Release>1000</Release>
             <muteGroup>0</muteGroup>
             <layer>
-                <filename>909 Hat_closed.flac</filename>
+                <filename>909 Hat_closed.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -282,7 +282,7 @@
             <Release>1000</Release>
             <muteGroup>0</muteGroup>
             <layer>
-                <filename>909 Hat_open.flac</filename>
+                <filename>909 Hat_open.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -308,7 +308,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>909 Ride.flac</filename>
+                <filename>909 Ride.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -334,7 +334,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>909 Crash.flac</filename>
+                <filename>909 Crash.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>

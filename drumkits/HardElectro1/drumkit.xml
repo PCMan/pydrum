@@ -5,7 +5,7 @@
     <instrumentList>
         <instrument>
             <id>0</id>
-            <filename>HardHse K 02.wav</filename>
+            <filename>HardHse K 02.ogg</filename>
             <name>Kick 1</name>
             <volume>1</volume>
             <isMuted>false</isMuted>
@@ -15,7 +15,7 @@
         </instrument>
         <instrument>
             <id>1</id>
-            <filename>HardHse K 03 B.wav</filename>
+            <filename>HardHse K 03 B.ogg</filename>
             <name>Kick 2</name>
             <volume>1</volume>
             <isMuted>false</isMuted>
@@ -25,7 +25,7 @@
         </instrument>
         <instrument>
             <id>2</id>
-            <filename>PowR BD 1.wav</filename>
+            <filename>PowR BD 1.ogg</filename>
             <name>Kick 3</name>
             <volume>1</volume>
             <isMuted>false</isMuted>
@@ -35,7 +35,7 @@
         </instrument>
         <instrument>
             <id>3</id>
-            <filename>PowR SN 1.wav</filename>
+            <filename>PowR SN 1.ogg</filename>
             <name>Snare</name>
             <volume>0.88</volume>
             <isMuted>false</isMuted>
@@ -45,7 +45,7 @@
         </instrument>
         <instrument>
             <id>4</id>
-            <filename>Amp Clap 1.wav</filename>
+            <filename>Amp Clap 1.ogg</filename>
             <name>Clap 1</name>
             <volume>0.73</volume>
             <isMuted>false</isMuted>
@@ -55,7 +55,7 @@
         </instrument>
         <instrument>
             <id>5</id>
-            <filename>Clap 1.wav</filename>
+            <filename>Clap 1.ogg</filename>
             <name>Clap 2</name>
             <volume>0.96</volume>
             <isMuted>false</isMuted>
@@ -65,7 +65,7 @@
         </instrument>
         <instrument>
             <id>6</id>
-            <filename>FX Chh 01.wav</filename>
+            <filename>FX Chh 01.ogg</filename>
             <name>Closed HH 1</name>
             <volume>0.89</volume>
             <isMuted>false</isMuted>
@@ -75,7 +75,7 @@
         </instrument>
         <instrument>
             <id>7</id>
-            <filename>Hard CHH 01.wav</filename>
+            <filename>Hard CHH 01.ogg</filename>
             <name>Closed HH 2</name>
             <volume>1</volume>
             <isMuted>false</isMuted>
@@ -85,7 +85,7 @@
         </instrument>
         <instrument>
             <id>8</id>
-            <filename>Hard CHH 02.wav</filename>
+            <filename>Hard CHH 02.ogg</filename>
             <name>Closed HH 3</name>
             <volume>0.82</volume>
             <isMuted>false</isMuted>
@@ -95,7 +95,7 @@
         </instrument>
         <instrument>
             <id>9</id>
-            <filename>CHH 1.wav</filename>
+            <filename>CHH 1.ogg</filename>
             <name>Closed HH 4</name>
             <volume>0.82</volume>
             <isMuted>false</isMuted>
@@ -105,7 +105,7 @@
         </instrument>
         <instrument>
             <id>10</id>
-            <filename>Hard Hse OHH 1.wav</filename>
+            <filename>Hard Hse OHH 1.ogg</filename>
             <name>Open HH</name>
             <volume>0.23</volume>
             <isMuted>false</isMuted>
@@ -115,7 +115,7 @@
         </instrument>
         <instrument>
             <id>11</id>
-            <filename>PowR HH 1.wav</filename>
+            <filename>PowR HH 1.ogg</filename>
             <name>Side HH</name>
             <volume>0.8</volume>
             <isMuted>false</isMuted>
@@ -125,7 +125,7 @@
         </instrument>
         <instrument>
             <id>12</id>
-            <filename>PowR HH 2.wav</filename>
+            <filename>PowR HH 2.ogg</filename>
             <name>Side OHH</name>
             <volume>0.51</volume>
             <isMuted>false</isMuted>
@@ -135,7 +135,7 @@
         </instrument>
         <instrument>
             <id>13</id>
-            <filename>yFX 8.wav</filename>
+            <filename>yFX 8.ogg</filename>
             <name>Zap 1</name>
             <volume>0.69</volume>
             <isMuted>false</isMuted>
@@ -145,7 +145,7 @@
         </instrument>
         <instrument>
             <id>14</id>
-            <filename>yFX 3.wav</filename>
+            <filename>yFX 3.ogg</filename>
             <name>Zap 2</name>
             <volume>0.8</volume>
             <isMuted>false</isMuted>
@@ -155,7 +155,7 @@
         </instrument>
         <instrument>
             <id>15</id>
-            <filename>xFX 6.wav</filename>
+            <filename>xFX 6.ogg</filename>
             <name>FX</name>
             <volume>0.77</volume>
             <isMuted>false</isMuted>
@@ -165,7 +165,7 @@
         </instrument>
         <instrument>
             <id>16</id>
-            <filename>emptySample.wav</filename>
+            <filename>emptySample.ogg</filename>
             <name>17</name>
             <volume>0.8</volume>
             <isMuted>false</isMuted>
@@ -175,7 +175,7 @@
         </instrument>
         <instrument>
             <id>17</id>
-            <filename>emptySample.wav</filename>
+            <filename>emptySample.ogg</filename>
             <name>18</name>
             <volume>0.8</volume>
             <isMuted>false</isMuted>
@@ -185,7 +185,7 @@
         </instrument>
         <instrument>
             <id>18</id>
-            <filename>emptySample.wav</filename>
+            <filename>emptySample.ogg</filename>
             <name>19</name>
             <volume>0.8</volume>
             <isMuted>false</isMuted>
@@ -195,7 +195,7 @@
         </instrument>
         <instrument>
             <id>19</id>
-            <filename>emptySample.wav</filename>
+            <filename>emptySample.ogg</filename>
             <name>20</name>
             <volume>0.8</volume>
             <isMuted>false</isMuted>
@@ -205,7 +205,7 @@
         </instrument>
         <instrument>
             <id>20</id>
-            <filename>emptySample.wav</filename>
+            <filename>emptySample.ogg</filename>
             <name>21</name>
             <volume>0.8</volume>
             <isMuted>false</isMuted>
@@ -215,7 +215,7 @@
         </instrument>
         <instrument>
             <id>21</id>
-            <filename>emptySample.wav</filename>
+            <filename>emptySample.ogg</filename>
             <name>22</name>
             <volume>0.8</volume>
             <isMuted>false</isMuted>
@@ -225,7 +225,7 @@
         </instrument>
         <instrument>
             <id>22</id>
-            <filename>emptySample.wav</filename>
+            <filename>emptySample.ogg</filename>
             <name>23</name>
             <volume>0.8</volume>
             <isMuted>false</isMuted>
@@ -235,7 +235,7 @@
         </instrument>
         <instrument>
             <id>23</id>
-            <filename>emptySample.wav</filename>
+            <filename>emptySample.ogg</filename>
             <name>24</name>
             <volume>0.8</volume>
             <isMuted>false</isMuted>
@@ -245,7 +245,7 @@
         </instrument>
         <instrument>
             <id>24</id>
-            <filename>emptySample.wav</filename>
+            <filename>emptySample.ogg</filename>
             <name>25</name>
             <volume>0.8</volume>
             <isMuted>false</isMuted>
@@ -255,7 +255,7 @@
         </instrument>
         <instrument>
             <id>25</id>
-            <filename>emptySample.wav</filename>
+            <filename>emptySample.ogg</filename>
             <name>26</name>
             <volume>0.8</volume>
             <isMuted>false</isMuted>
@@ -265,7 +265,7 @@
         </instrument>
         <instrument>
             <id>26</id>
-            <filename>emptySample.wav</filename>
+            <filename>emptySample.ogg</filename>
             <name>27</name>
             <volume>0.8</volume>
             <isMuted>false</isMuted>
@@ -275,7 +275,7 @@
         </instrument>
         <instrument>
             <id>27</id>
-            <filename>emptySample.wav</filename>
+            <filename>emptySample.ogg</filename>
             <name>28</name>
             <volume>0.8</volume>
             <isMuted>false</isMuted>
@@ -285,7 +285,7 @@
         </instrument>
         <instrument>
             <id>28</id>
-            <filename>emptySample.wav</filename>
+            <filename>emptySample.ogg</filename>
             <name>29</name>
             <volume>0.8</volume>
             <isMuted>false</isMuted>
@@ -295,7 +295,7 @@
         </instrument>
         <instrument>
             <id>29</id>
-            <filename>emptySample.wav</filename>
+            <filename>emptySample.ogg</filename>
             <name>30</name>
             <volume>0.8</volume>
             <isMuted>false</isMuted>
@@ -305,7 +305,7 @@
         </instrument>
         <instrument>
             <id>30</id>
-            <filename>emptySample.wav</filename>
+            <filename>emptySample.ogg</filename>
             <name>31</name>
             <volume>0.8</volume>
             <isMuted>false</isMuted>
@@ -315,7 +315,7 @@
         </instrument>
         <instrument>
             <id>31</id>
-            <filename>emptySample.wav</filename>
+            <filename>emptySample.ogg</filename>
             <name>32</name>
             <volume>0.8</volume>
             <isMuted>false</isMuted>

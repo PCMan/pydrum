@@ -22,7 +22,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Kick 1.flac</filename>
+                <filename>TR-626 Kick 1.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -48,7 +48,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Kick 2.flac</filename>
+                <filename>TR-626 Kick 2.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -74,7 +74,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Rim.flac</filename>
+                <filename>TR-626 Rim.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -100,7 +100,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Snare 1.flac</filename>
+                <filename>TR-626 Snare 1.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -126,7 +126,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Snare 2.flac</filename>
+                <filename>TR-626 Snare 2.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -152,7 +152,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Snare 3.flac</filename>
+                <filename>TR-626 Snare 3.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -178,7 +178,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Clap.flac</filename>
+                <filename>TR-626 Clap.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -204,7 +204,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Tom 1 Low.flac</filename>
+                <filename>TR-626 Tom 1 Low.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -230,7 +230,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Tom 1 Mid.flac</filename>
+                <filename>TR-626 Tom 1 Mid.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -256,7 +256,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Tom 1 Hi.flac</filename>
+                <filename>TR-626 Tom 1 Hi.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -282,7 +282,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Tom 2 Low.flac</filename>
+                <filename>TR-626 Tom 2 Low.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -308,7 +308,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Tom 2 Mid.flac</filename>
+                <filename>TR-626 Tom 2 Mid.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -334,7 +334,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Tom 2 Hi.flac</filename>
+                <filename>TR-626 Tom 2 Hi.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -360,7 +360,7 @@
             <Release>1000</Release>
             <muteGroup>0</muteGroup>
             <layer>
-                <filename>TR-626 Hat Closed.flac</filename>
+                <filename>TR-626 Hat Closed.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -386,7 +386,7 @@
             <Release>1000</Release>
             <muteGroup>0</muteGroup>
             <layer>
-                <filename>TR-626 Hat Open.flac</filename>
+                <filename>TR-626 Hat Open.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -412,7 +412,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Conga Low.flac</filename>
+                <filename>TR-626 Conga Low.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -438,7 +438,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Conga Hi.flac</filename>
+                <filename>TR-626 Conga Hi.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -464,7 +464,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Conga Slap.flac</filename>
+                <filename>TR-626 Conga Slap.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -490,7 +490,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Shaker.flac</filename>
+                <filename>TR-626 Shaker.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -516,7 +516,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Timbale Low.flac</filename>
+                <filename>TR-626 Timbale Low.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -542,7 +542,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Timbale Hi.flac</filename>
+                <filename>TR-626 Timbale Hi.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -568,7 +568,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Agogo Low.flac</filename>
+                <filename>TR-626 Agogo Low.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -594,7 +594,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Agogo Hi.flac</filename>
+                <filename>TR-626 Agogo Hi.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -620,7 +620,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Ride Cymbal.flac</filename>
+                <filename>TR-626 Ride Cymbal.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -646,7 +646,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Cup Cymbal.flac</filename>
+                <filename>TR-626 Cup Cymbal.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -672,7 +672,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 China Cymbal.flac</filename>
+                <filename>TR-626 China Cymbal.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -698,7 +698,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Crash.flac</filename>
+                <filename>TR-626 Crash.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -724,7 +724,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Cowbell.flac</filename>
+                <filename>TR-626 Cowbell.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
@@ -750,7 +750,7 @@
             <Release>1000</Release>
             <muteGroup>-1</muteGroup>
             <layer>
-                <filename>TR-626 Tambourine.flac</filename>
+                <filename>TR-626 Tambourine.ogg</filename>
                 <min>0</min>
                 <max>1</max>
                 <gain>1</gain>
