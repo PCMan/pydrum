@@ -54,7 +54,7 @@ class PyDrum:
 
 
 class Instrument:
-    def __init__(self, spi_channel, sound_file = "", threshold=10.0, min_interval=0.1):
+    def __init__(self, spi_channel, sound_file = "", threshold=10.0, min_interval=0.05):
         self.spi_channel = spi_channel
         self.last_value = 0
         self.last_change = 0
@@ -123,11 +123,11 @@ if __name__ == "__main__":
     # GPIO.setup(7, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
     pydrum = PyDrum()
-    pydrum.add_instrument(Instrument(0, "drumkits/GMkit/sn_Wet_b.ogg", threshold=100))
-    pydrum.add_instrument(Instrument(1, "drumkits/GMkit/kick_Dry_b.ogg", threshold=100))
-    pydrum.add_instrument(Instrument(3, "drumkits/GMkit/tom_Rock_mid", threshold=100))
-    pydrum.add_instrument(Instrument(4, "drumkits/GMkit/tom_Rock_lo.ogg", threshold=100))
-    pydrum.add_instrument(Instrument(5, "drumkits/GMkit/cra_Rock_a.ogg", threshold=100))
+    pydrum.add_instrument(Instrument(5, "drumkits/GMkit/sn_Wet_b.ogg", threshold=100))
+    pydrum.add_instrument(Instrument(4, "drumkits/GMkit/kick_Dry_b.ogg", threshold=100))
+    pydrum.add_instrument(Instrument(3, "drumkits/GMkit/tom_Rock_mid.ogg", threshold=100))
+    pydrum.add_instrument(Instrument(1, "drumkits/GMkit/tom_Rock_lo.ogg", threshold=100))
+    pydrum.add_instrument(Instrument(0, "drumkits/GMkit/cra_Rock_a.ogg", threshold=100))
     # pydrum.add_instrument(Instrument(5, "drumkits/GMkit/cra_Rock_a.ogg", min_interval=0.2, threshold=200))
     try:
         # pydrum.calibrate(duration=5)
