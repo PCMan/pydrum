@@ -15,6 +15,9 @@ if __name__ == "__main__":
 	spi = spidev.SpiDev()  
 	spi.open(0,0)
 
+	channel = 0
+	if len(sys.argv) > 1:
+		channel = int(sys.argv[1])
 	print("start")
 	x = []
 	y = []
@@ -22,7 +25,7 @@ if __name__ == "__main__":
 	while True:
 		current_time = time.time()
 		elapsed = current_time - start_time
-		value = ReadADC(spi, 7)
+		value = ReadADC(spi, channel)
 		x.append(elapsed)
 		y.append(value)
 		if elapsed > 15.0:
@@ -32,8 +35,8 @@ if __name__ == "__main__":
 		#if delta < 0.001:
 		#	time.sleep(0.001 - delta)
 
-	if len(sys.argv) > 1:
-		filename = sys.argv[1]
+	if len(sys.argv) > 2:
+		filename = sys.argv[2]
 		#plt.savefig(filename + ".png")
 
 		with open(filename + ".csv", "w") as f:

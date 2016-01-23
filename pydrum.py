@@ -20,7 +20,8 @@ class PyDrum:
         self.spi = spidev.SpiDev()
         self.spi.open(0,0)
         # set small buffer size to decrease latency
-        pygame.mixer.init(buffer=64)
+        # pygame.mixer.init(buffer=64)
+        pygame.mixer.init(buffer=16)
         self.instruments = []
 
     def finalize(self):
@@ -53,13 +54,14 @@ class PyDrum:
 
 
 class Instrument:
-    def __init__(self, spi_channel, sound_file = ""):
+    def __init__(self, spi_channel, sound_file = "", threshold=10.0, min_interval=0.1):
         self.spi_channel = spi_channel
         self.last_value = 0
         self.last_change = 0
         self.noise_level = 0.0
         self.noise_stdev = 0.0
-        self.threshold = 10.0
+        self.threshold = threshold
+        self.min_interval = min_interval # minimum interval between beats
         self.pydrum = None
         self.calibrating = False
         self.last_time = 0.0
@@ -73,12 +75,13 @@ class Instrument:
 
     def stop_calibration(self):
         self.calibrating = False
+        self.max_noise = max(self.noise_data)
         self.noise_mean = np.mean(self.noise_data)
         self.noise_stdev = np.std(self.noise_data)
         # Assume the noise has a normal distribution
         # Prob(x<Z)=99%, so we use 2.33 here
         self.threshold = self.noise_mean + self.noise_stdev * 2.33
-        print "Noise level", self.noise_mean, "+/-", self.noise_stdev
+        print self.spi_channel, "Noise level", self.noise_mean, "+/-", self.noise_stdev, ", max:", self.max_noise
         print "threshold: ", self.spi_channel, self.threshold
         del self.noise_data
 
@@ -91,18 +94,20 @@ class Instrument:
             change = value - self.last_value
             if value > self.threshold: # noises can cause low values
                 # check if we are at the peak of the input wave form
-                if self.last_change > 0 and change < 0:
+                if self.last_change > 3 and change < -3:
                     current_time = time.time()
                     # avoid playing the sound file too frequently
-                    if (current_time - self.last_time) > 0.1:
+                    if (current_time - self.last_time) > self.min_interval:
                         if self.sound:
                             # FIXME: need a way to adjust the volume
                             volume = 2 * float(value) / 1024
                             channel = self.sound.play()
-                            print "play:", self.spi_channel, volume
+                            self.last_time = current_time
+                            print "play:", self.spi_channel, volume, value
                             if channel:
                                 channel.set_volume(volume)
-                            self.last_time = current_time
+                    # else:
+                    #     print "delay play"
             self.last_change = change
             self.last_value = value
 
@@ -118,11 +123,14 @@ if __name__ == "__main__":
     # GPIO.setup(7, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
     pydrum = PyDrum()
-    pydrum.add_instrument(Instrument(7, "drumkits/GMkit/sn_Wet_b.ogg"))
-    # pydrum.add_instrument(PyDrum(7, "drumkits/GMkit/kick_Dry_b.ogg"))
-    # pydrum.add_instrument(PyDrum(7, "drumkits/GMkit/hhp_Dry_a.ogg"))
+    pydrum.add_instrument(Instrument(0, "drumkits/GMkit/sn_Wet_b.ogg", threshold=100))
+    pydrum.add_instrument(Instrument(1, "drumkits/GMkit/kick_Dry_b.ogg", threshold=100))
+    pydrum.add_instrument(Instrument(3, "drumkits/GMkit/tom_Rock_mid", threshold=100))
+    pydrum.add_instrument(Instrument(4, "drumkits/GMkit/tom_Rock_lo.ogg", threshold=100))
+    pydrum.add_instrument(Instrument(5, "drumkits/GMkit/cra_Rock_a.ogg", threshold=100))
+    # pydrum.add_instrument(Instrument(5, "drumkits/GMkit/cra_Rock_a.ogg", min_interval=0.2, threshold=200))
     try:
-        pydrum.calibrate(duration=5)
+        # pydrum.calibrate(duration=5)
         while True:
             # btn_pressed = GPIO.input(7)
             pydrum.process_input()
