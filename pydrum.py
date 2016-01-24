@@ -54,7 +54,7 @@ class PyDrum:
 
 
 class Instrument:
-    def __init__(self, spi_channel, sound_file = "", threshold=10.0, min_interval=0.05):
+    def __init__(self, spi_channel, sound_file = "", threshold=100.0, min_interval=0.05, amplify=1.0):
         self.spi_channel = spi_channel
         self.last_value = 0
         self.last_change = 0
@@ -62,6 +62,7 @@ class Instrument:
         self.noise_stdev = 0.0
         self.threshold = threshold
         self.min_interval = min_interval # minimum interval between beats
+        self.amplify = amplify
         self.pydrum = None
         self.calibrating = False
         self.last_time = 0.0
@@ -99,8 +100,7 @@ class Instrument:
                     # avoid playing the sound file too frequently
                     if (current_time - self.last_time) > self.min_interval:
                         if self.sound:
-                            # FIXME: need a way to adjust the volume
-                            volume = 2 * float(value) / 1024
+                            volume = self.amplify * float(value) / 1024
                             channel = self.sound.play()
                             self.last_time = current_time
                             print "play:", self.spi_channel, volume, value
@@ -123,12 +123,13 @@ if __name__ == "__main__":
     # GPIO.setup(7, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
     pydrum = PyDrum()
-    pydrum.add_instrument(Instrument(5, "drumkits/GMkit/sn_Wet_b.ogg", threshold=100))
-    pydrum.add_instrument(Instrument(4, "drumkits/GMkit/kick_Dry_b.ogg", threshold=100))
-    pydrum.add_instrument(Instrument(3, "drumkits/GMkit/tom_Rock_mid.ogg", threshold=100))
-    pydrum.add_instrument(Instrument(1, "drumkits/GMkit/tom_Rock_lo.ogg", threshold=100))
-    pydrum.add_instrument(Instrument(0, "drumkits/GMkit/cra_Rock_a.ogg", threshold=100))
-    # pydrum.add_instrument(Instrument(5, "drumkits/GMkit/cra_Rock_a.ogg", min_interval=0.2, threshold=200))
+    pydrum.add_instrument(Instrument(0, "drumkits/GMkit/cra_Rock_a.ogg", amplify=3.0))
+    pydrum.add_instrument(Instrument(1, "drumkits/GMkit/tom_Rock_hi.ogg", amplify=2.0))
+    pydrum.add_instrument(Instrument(2, "drumkits/GMkit/cym_Rock_b.ogg", amplify=1.0))
+    pydrum.add_instrument(Instrument(3, "drumkits/GMkit/hhc_Rock_b.ogg", amplify=1.0))
+    pydrum.add_instrument(Instrument(4, "drumkits/GMkit/sn_Wet_b.ogg", amplify=1.5))
+    pydrum.add_instrument(Instrument(5, "drumkits/GMkit/tom_Rock_lo.ogg", amplify=1.5))
+    pydrum.add_instrument(Instrument(6, "drumkits/GMkit/kick_Dry_b.ogg", amplify=3.0))
     try:
         # pydrum.calibrate(duration=5)
         while True:
