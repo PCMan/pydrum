@@ -86,6 +86,18 @@ class Instrument:
         print "threshold: ", self.spi_channel, self.threshold
         del self.noise_data
 
+    def play(self, volume):
+        current_time = time.time()
+        # avoid playing the sound file too frequently
+        if (current_time - self.last_time) > self.min_interval:
+            if self.sound:
+                channel = self.sound.play()
+                self.last_time = current_time
+                if channel:
+                    channel.set_volume(volume)
+        # else:
+        #     print "delay play"
+
     def process_input(self):
         spi = self.pydrum.spi
         value = read_adc(spi, self.spi_channel)
@@ -96,18 +108,9 @@ class Instrument:
             if value > self.threshold: # noises can cause low values
                 # check if we are at the peak of the input wave form
                 if self.last_change > 3 and change < -3:
-                    current_time = time.time()
-                    # avoid playing the sound file too frequently
-                    if (current_time - self.last_time) > self.min_interval:
-                        if self.sound:
-                            volume = self.amplify * float(value) / 1024
-                            channel = self.sound.play()
-                            self.last_time = current_time
-                            print "play:", self.spi_channel, volume, value
-                            if channel:
-                                channel.set_volume(volume)
-                    # else:
-                    #     print "delay play"
+                    volume = self.amplify * float(value) / 1024
+                    print "play:", self.spi_channel, volume, value
+                    self.play(volume)
             self.last_change = change
             self.last_value = value
 
@@ -118,6 +121,61 @@ class Instrument:
         self.sound = pygame.mixer.Sound(sound_file)
 
 
+# pedal of instruments like hihat.
+# linear hall effect sensor-based
+class Pedal:
+    def __init__(self, spi_channel, threshold=600.0, close_threshold=800.0):
+        self.spi_channel = spi_channel
+        self.closed = False
+        self.threshold = threshold
+        self.close_threshold = close_threshold
+
+    def process_input(self):
+        spi = self.pydrum.spi
+        value = read_adc(spi, self.spi_channel)
+        if value > self.threshold:  # ignore low level noise
+            if value < self.close_threshold:
+                self.closed = False
+            else:
+                self.closed = True
+            # print self.closed
+
+
+class Hihat(Instrument):
+    def __init__(self, spi_channel, pedal=None, sound_files = None, threshold=100.0, min_interval=0.05, amplify=1.0):
+        Instrument.__init__(self, spi_channel, "", threshold, min_interval, amplify)
+        self.pedal = pedal
+        self.set_sound_files(sound_files)
+
+    def set_pedal(self, pedal):
+        self.pedal = pedal
+
+    def set_sounds(self, sounds):
+        self.sounds = sounds
+
+    def set_sound_files(self, sound_files):
+        self.sounds = []
+        for sound_file in sound_files:
+            sound = pygame.mixer.Sound(sound_file)
+            self.sounds.append(sound)
+
+    def play(self, volume):
+        current_time = time.time()
+        # avoid playing the sound file too frequently
+        if (current_time - self.last_time) > self.min_interval:
+            if self.sounds:
+                # get the sound to play based on the state of the pedal
+                if self.pedal:
+                    idx = 0 if self.pedal.closed else 1
+                    sound = self.sounds[idx]
+                else:
+                    sound = self.sounds[0]
+                channel = sound.play()
+                self.last_time = current_time
+                if channel:
+                    channel.set_volume(volume)
+
+
 if __name__ == "__main__":
     GPIO.setmode(GPIO.BOARD)
     # GPIO.setup(7, GPIO.IN, pull_up_down=GPIO.PUD_UP)
@@ -126,7 +184,10 @@ if __name__ == "__main__":
     pydrum.add_instrument(Instrument(0, "drumkits/GMkit/cra_Rock_a.ogg", amplify=3.0))
     pydrum.add_instrument(Instrument(1, "drumkits/GMkit/tom_Rock_hi.ogg", amplify=2.0))
     pydrum.add_instrument(Instrument(2, "drumkits/GMkit/cym_Rock_b.ogg", amplify=1.0))
-    pydrum.add_instrument(Instrument(3, "drumkits/GMkit/hhc_Rock_b.ogg", amplify=1.0))
+    hihat_pedal=Pedal(7)
+    pydrum.add_instrument(hihat_pedal)
+    hihat = Hihat(3, pedal=hihat_pedal, sound_files=["drumkits/GMkit/hhc_Dry_a.ogg", "drumkits/GMkit/hhp_Dry_a.ogg"], amplify=1.0)
+    pydrum.add_instrument(hihat)
     pydrum.add_instrument(Instrument(4, "drumkits/GMkit/sn_Wet_b.ogg", amplify=1.5))
     pydrum.add_instrument(Instrument(5, "drumkits/GMkit/tom_Rock_lo.ogg", amplify=1.5))
     pydrum.add_instrument(Instrument(6, "drumkits/GMkit/kick_Dry_b.ogg", amplify=3.0))

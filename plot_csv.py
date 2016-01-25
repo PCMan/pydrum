@@ -34,8 +34,8 @@ if __name__ == "__main__":
 		for t, intensity, in zip(x, y):
 			change = intensity - last_intensity
 			# if intensity > 100 and changes[0] >= 0 and changes[1] >= 0 and changes[2] <= 0 and changes[3] <= 0:
-			if intensity > 150 and last_change >= 0 and change <= 0: # peak recognized
-				plt.annotate(str(intensity), xy=(t, last_intensity))
+			#if intensity > 150 and last_change >= 0 and change <= 0: # peak recognized
+			#	plt.annotate(str(intensity), xy=(t, last_intensity))
 			last_intensity = intensity
 			last_change = change
 
