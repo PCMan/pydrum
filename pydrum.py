@@ -22,6 +22,7 @@ class PyDrum:
         # set small buffer size to decrease latency
         # pygame.mixer.init(buffer=64)
         pygame.mixer.init(buffer=16)
+        pygame.mixer.set_num_channels(128)  # we need to play numerous sound files concurrently so increase # of channels.
         self.instruments = []
 
     def finalize(self):
@@ -54,7 +55,7 @@ class PyDrum:
 
 
 class Instrument:
-    def __init__(self, spi_channel, sound_file = "", threshold=100.0, min_interval=0.05, amplify=1.0):
+    def __init__(self, spi_channel, sound_file = "", threshold=100.0, min_interval=0.025, amplify=1.0):
         self.spi_channel = spi_channel
         self.last_value = 0
         self.last_change = 0
@@ -184,13 +185,14 @@ if __name__ == "__main__":
     pydrum.add_instrument(Instrument(0, "drumkits/GMkit/cra_Rock_a.ogg", amplify=3.0))
     pydrum.add_instrument(Instrument(1, "drumkits/GMkit/tom_Rock_hi.ogg", amplify=2.0))
     pydrum.add_instrument(Instrument(2, "drumkits/GMkit/cym_Rock_b.ogg", amplify=1.0))
-    hihat_pedal=Pedal(7)
+    hihat_pedal=Pedal(7, close_threshold=800.0)
     pydrum.add_instrument(hihat_pedal)
-    hihat = Hihat(3, pedal=hihat_pedal, sound_files=["drumkits/GMkit/hhc_Dry_a.ogg", "drumkits/GMkit/hhp_Dry_a.ogg"], amplify=1.0)
+    hihat = Hihat(3, pedal=hihat_pedal, sound_files=["drumkits/GMkit/hhc_Dry_a.ogg", "drumkits/UltraAcousticKit/HH_1_open.ogg"], amplify=2.0)
+    # hihat = Hihat(3, pedal=hihat_pedal, sound_files=["drumkits/GMkit/hhc_Dry_a.ogg", "drumkits/GMkit/hhp_Dry_a.ogg"], amplify=1.0)
     pydrum.add_instrument(hihat)
     pydrum.add_instrument(Instrument(4, "drumkits/GMkit/sn_Wet_b.ogg", amplify=1.5))
-    pydrum.add_instrument(Instrument(5, "drumkits/GMkit/tom_Rock_lo.ogg", amplify=1.5))
-    pydrum.add_instrument(Instrument(6, "drumkits/GMkit/kick_Dry_b.ogg", amplify=3.0))
+    pydrum.add_instrument(Instrument(5, "drumkits/GMkit/tom_Rock_lo.ogg", amplify=1.0))
+    pydrum.add_instrument(Instrument(6, "drumkits/GMkit/kick_Dry_b.ogg", amplify=3.0, min_interval=0.1))
     try:
         # pydrum.calibrate(duration=5)
         while True:
