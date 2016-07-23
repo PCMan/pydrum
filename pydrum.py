@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 import pygame
 import time
 import spidev
@@ -83,8 +83,8 @@ class Instrument:
         # Assume the noise has a normal distribution
         # Prob(x<Z)=99%, so we use 2.33 here
         self.threshold = self.noise_mean + self.noise_stdev * 2.33
-        print self.spi_channel, "Noise level", self.noise_mean, "+/-", self.noise_stdev, ", max:", self.max_noise
-        print "threshold: ", self.spi_channel, self.threshold
+        print(self.spi_channel, "Noise level", self.noise_mean, "+/-", self.noise_stdev, ", max:", self.max_noise)
+        print("threshold: ", self.spi_channel, self.threshold)
         del self.noise_data
 
     def play(self, volume):
@@ -110,7 +110,7 @@ class Instrument:
                 # check if we are at the peak of the input wave form
                 if self.last_change > 3 and change < -3:
                     volume = self.amplify * float(value) / 1024
-                    print "play:", self.spi_channel, volume, value
+                    print("play:", self.spi_channel, volume, value)
                     self.play(volume)
             self.last_change = change
             self.last_value = value
