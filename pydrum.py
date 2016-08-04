@@ -12,7 +12,7 @@ def read_adc(spi, ch):
        return -1  
     adc = spi.xfer2([1,(8+ch)<<4,0])  
     data = ((adc[1]&3)<<8) + adc[2]  
-    return data  
+    return data
 
 
 class PyDrum:
@@ -24,6 +24,8 @@ class PyDrum:
         pygame.mixer.init(buffer=16)
         pygame.mixer.set_num_channels(128)  # we need to play numerous sound files concurrently so increase # of channels.
         self.instruments = []
+        self.n_samples = 0
+        self.begin_time = time.time()
 
     def finalize(self):
         if self.spi:
@@ -39,6 +41,13 @@ class PyDrum:
     def process_input(self):
         for instrument in self.instruments:
             instrument.process_input()
+        self.n_samples += 1
+        elapsed = time.time() - self.begin_time
+        if elapsed > 10:
+            if int(elapsed) % 10 == 0:
+                sr = self.n_samples / elapsed
+                print("sampling rate:", sr)
+
 
     # detect baseline noise and get a threshold value
     def calibrate(self, duration=3):

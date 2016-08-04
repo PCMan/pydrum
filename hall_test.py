@@ -28,14 +28,13 @@ if __name__ == "__main__":
 		value = ReadADC(spi, channel)
 		x.append(elapsed)
 		y.append(value)
-		if elapsed > 15.0:
+		if elapsed > 30.0:
 			break
-		# print("%.4f" % elapsed, value)
+		print("%.4f" % elapsed, value)
 		delta = time.time() - current_time
 		#if delta < 0.001:
 		#	time.sleep(0.001 - delta)
 
-	print("average sampling rate:", len(y) / elapsed)
 	if len(sys.argv) > 2:
 		filename = sys.argv[2]
 		#plt.savefig(filename + ".png")
