@@ -2,12 +2,15 @@
 import pygame
 import time
 import spidev
-import RPi.GPIO as GPIO
+# import RPi.GPIO as GPIO
 import numpy as np
-from scipy import signal
+import configparser
+import os
 
 
 SAMPLING_RATE = 250  # sampling rate in Hz
+DEFAULT_THRESHOLD = 30
+DEFAULT_MIN_INTERVAL = 0.075
 
 # Read SPI data from MCP3008, Channel must be an integer 0-7
 def read_adc(spi, ch):
@@ -19,7 +22,7 @@ def read_adc(spi, ch):
 
 
 class PyDrum:
-    def __init__(self):
+    def __init__(self, config_file):
         self.spi = spidev.SpiDev()
         self.spi.open(0,0)
         # set small buffer size to decrease latency
@@ -32,10 +35,37 @@ class PyDrum:
         pygame.mixer.set_num_channels(160)  # we need to play numerous sound files concurrently so increase # of channels.
         self.instruments = []
         self.begin_time = time.time()
+        self.load_config(config_file)
 
     def finalize(self):
         if self.spi:
             self.spi.close()
+
+    def load_config(self, config_file):
+        config = configparser.ConfigParser()
+        config.read(config_file)
+        for name in ("crash", "tom1", "ride", "hihat", "snare", "floor_tom", "base_drum"):
+            if name not in config:
+                continue
+            section = config[name]
+            channel = section.getint("channel", fallback=-1)
+            sound = section.get("sound", None)
+            threshold = section.getfloat("threshold", fallback=DEFAULT_THRESHOLD)
+            min_interval = section.getfloat("min_interval", fallback=DEFAULT_MIN_INTERVAL)
+            amplify = section.getfloat("amplify", fallback=1.0)
+            if name == "hihat": # special handling for hihat
+                pedal_channel = section.getint("pedal_channel", fallback=-1)
+                if pedal_channel == -1:
+                    continue
+                open_sound=section.get("open_sound", None)
+                close_sound=section.get("close_sound", None)
+                pedal_close_threshold = section.getfloat("pedal_close_threshold", fallback=800.0)
+                hihat_pedal=Pedal(pedal_channel, close_threshold=pedal_close_threshold)
+                self.add_instrument(hihat_pedal)
+                instrument = Hihat(channel, pedal=hihat_pedal, sound_files=[close_sound, open_sound], amplify=amplify)
+            else:
+                instrument = Instrument(channel, sound_file=sound, threshold=threshold, min_interval=min_interval, amplify=amplify)
+            self.add_instrument(instrument)
 
     def add_instrument(self, instrument):
         instrument.pydrum = self
@@ -59,22 +89,8 @@ class PyDrum:
                 time.sleep(wait_time)
 
 
-    # detect baseline noise and get a threshold value
-    def calibrate(self, duration=3):
-        print("start calibration")
-        spi = self.spi
-        start_time = time.time()
-        for instrument in self.instruments:
-            instrument.start_calibration()
-        while (time.time() - start_time) < duration:
-            self.process_input()
-        for instrument in self.instruments:
-            instrument.stop_calibration()
-        print("calibration finished!")
-
-
 class Instrument:
-    def __init__(self, spi_channel, sound_file = "", threshold=100.0, min_interval=0.025, amplify=1.0):
+    def __init__(self, spi_channel, sound_file = "", threshold=DEFAULT_THRESHOLD, min_interval=DEFAULT_MIN_INTERVAL, amplify=1.0):
         self.spi_channel = spi_channel
         self.last_value = 0
         self.last_change = 0
@@ -84,27 +100,9 @@ class Instrument:
         self.min_interval = min_interval # minimum interval between beats
         self.amplify = amplify
         self.pydrum = None
-        self.calibrating = False
         self.last_time = 0.0
         if sound_file:
             self.set_sound_file(sound_file)
-
-    # detect baseline noise and get a threshold value
-    def start_calibration(self):
-        self.calibrating = True
-        self.noise_data = []
-
-    def stop_calibration(self):
-        self.calibrating = False
-        self.max_noise = max(self.noise_data)
-        self.noise_mean = np.mean(self.noise_data)
-        self.noise_stdev = np.std(self.noise_data)
-        # Assume the noise has a normal distribution
-        # Prob(x<Z)=99%, so we use 2.33 here
-        self.threshold = self.noise_mean + self.noise_stdev * 2.33
-        print(self.spi_channel, "Noise level", self.noise_mean, "+/-", self.noise_stdev, ", max:", self.max_noise)
-        print("threshold: ", self.spi_channel, self.threshold)
-        del self.noise_data
 
     def play(self, volume):
         current_time = time.time()
@@ -119,18 +117,15 @@ class Instrument:
     def process_input(self):
         spi = self.pydrum.spi
         value = read_adc(spi, self.spi_channel)
-        if self.calibrating:
-            self.noise_data.append(value)
-        else:
-            change = value - self.last_value
-            if value > self.threshold: # noises can cause low values
-                # check if we are at the peak of the input wave form
-                if self.last_change > 3 and change < -3:
-                    volume = self.amplify * float(value) / 1024
-                    print("play:", self.spi_channel, volume, value)
-                    self.play(volume)
-            self.last_change = change
-            self.last_value = value
+        change = value - self.last_value
+        if value > self.threshold: # noises can cause low values
+            # check if we are at the peak of the input wave form
+            if self.last_change > 3 and change < -3:
+                volume = self.amplify * float(value) / 1024
+                print("play:", self.spi_channel, volume, value)
+                self.play(volume)
+        self.last_change = change
+        self.last_value = value
 
     def set_sound(self, sound):
         self.sound = sound
@@ -160,7 +155,7 @@ class Pedal:
 
 
 class Hihat(Instrument):
-    def __init__(self, spi_channel, pedal=None, sound_files = None, threshold=100.0, min_interval=0.05, amplify=1.0):
+    def __init__(self, spi_channel, pedal=None, sound_files = None, threshold=DEFAULT_THRESHOLD, min_interval=DEFAULT_MIN_INTERVAL, amplify=1.0):
         Instrument.__init__(self, spi_channel, "", threshold, min_interval, amplify)
         self.pedal = pedal
         self.set_sound_files(sound_files)
@@ -195,22 +190,10 @@ class Hihat(Instrument):
 
 
 if __name__ == "__main__":
-    GPIO.setmode(GPIO.BOARD)
-
-    pydrum = PyDrum()
-    pydrum.add_instrument(Instrument(1, "drumkits/GMkit/cra_Rock_a.ogg", amplify=3.0))
-    pydrum.add_instrument(Instrument(2, "drumkits/GMkit/tom_Rock_hi.ogg", amplify=2.0))
-    pydrum.add_instrument(Instrument(3, "drumkits/GMkit/cym_Rock_b.ogg", amplify=1.0))
-    hihat_pedal=Pedal(0, close_threshold=800.0)
-    pydrum.add_instrument(hihat_pedal)
-    hihat = Hihat(4, pedal=hihat_pedal, sound_files=["drumkits/GMkit/hhc_Dry_a.ogg", "drumkits/UltraAcousticKit/HH_1_open.ogg"], amplify=2.0)
-    # hihat = Hihat(3, pedal=hihat_pedal, sound_files=["drumkits/GMkit/hhc_Dry_a.ogg", "drumkits/GMkit/hhp_Dry_a.ogg"], amplify=1.0)
-    pydrum.add_instrument(hihat)
-    pydrum.add_instrument(Instrument(5, "drumkits/GMkit/sn_Wet_b.ogg", amplify=1.5))
-    pydrum.add_instrument(Instrument(6, "drumkits/GMkit/tom_Rock_lo.ogg", amplify=1.0))
-    pydrum.add_instrument(Instrument(7, "drumkits/GMkit/kick_Dry_b.ogg", amplify=3.0, min_interval=0.1))
+    # GPIO.setmode(GPIO.BOARD)
+    config_file = os.path.join(os.path.dirname(__file__), "pydrum.conf")
+    pydrum = PyDrum(config_file=config_file)
     try:
-        # pydrum.calibrate(duration=5)
         pydrum.main_loop()
     except KeyboardInterrupt:
         pass
