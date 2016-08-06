@@ -84,6 +84,8 @@ class Instrument:
         self.last_time = 0.0
         if sound_file:
             self.set_sound_file(sound_file)
+        self.buf = np.zeros(5)
+        self.delay_peak_detect = 0
 
     # detect baseline noise and get a threshold value
     def start_calibration(self):
@@ -114,19 +116,37 @@ class Instrument:
 
     def process_input(self):
         spi = self.pydrum.spi
+        buf = self.buf
         value = read_adc(spi, self.spi_channel)
         if self.calibrating:
             self.noise_data.append(value)
         else:
-            change = value - self.last_value
-            if value > self.threshold: # noises can cause low values
-                # check if we are at the peak of the input wave form
-                if self.last_change > 3 and change < -3:
-                    volume = self.amplify * float(value) / 1024
-                    print("play:", self.spi_channel, volume, value)
-                    self.play(volume)
-            self.last_change = change
-            self.last_value = value
+            self.buf = buf = np.roll(buf, -1)
+            buf[-1] = value
+            if self.delay_peak_detect > 0:
+                self.delay_peak_detect -= 1
+            else:
+                peak_pos = signal.argrelmax(buf, order=2)[0]  # find peaks in the current buffer
+                if peak_pos:  # a peak is recognized
+                    peak_value = buf[peak_pos[0]]
+                    if peak_value > self.threshold: # noises tends to have low values
+                        print(self.spi_channel, peak_pos[0], buf)
+                        volume = self.amplify * peak_value / 1024
+                        self.play(volume)
+                        # we only want a peak per segment.
+                        # wait until the current buffer is washed out and perform the next peak detection
+                        self.delay_peak_detect = len(buf)
+                '''
+                change = value - self.last_value
+                if value > self.threshold: # noises can cause low values
+                    # check if we are at the peak of the input wave form
+                    if self.last_change > 3 and change < -3:
+                        volume = self.amplify * float(value) / 1024
+                        print("play:", self.spi_channel, volume, value)
+                        self.play(volume)
+                self.last_change = change
+                self.last_value = value
+                '''
 
     def set_sound(self, sound):
         self.sound = sound
