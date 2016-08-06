@@ -7,7 +7,7 @@ import numpy as np
 from scipy import signal
 
 
-SAMPLING_RATE = 200  # sampling rate in Hz
+SAMPLING_RATE = 250  # sampling rate in Hz
 
 # Read SPI data from MCP3008, Channel must be an integer 0-7
 def read_adc(spi, ch):
