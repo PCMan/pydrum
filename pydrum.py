@@ -4,7 +4,10 @@ import time
 import spidev
 import RPi.GPIO as GPIO
 import numpy as np
+from scipy import signal
 
+
+SAMPLING_RATE = 200  # sampling rate in Hz
 
 # Read SPI data from MCP3008, Channel must be an integer 0-7
 def read_adc(spi, ch):
@@ -24,7 +27,6 @@ class PyDrum:
         pygame.mixer.init(buffer=16)
         pygame.mixer.set_num_channels(128)  # we need to play numerous sound files concurrently so increase # of channels.
         self.instruments = []
-        self.n_samples = 0
         self.begin_time = time.time()
 
     def finalize(self):
@@ -38,15 +40,19 @@ class PyDrum:
     def remove_instrument(self, instrument):
         self.instruments.remove(instrument)
 
-    def process_input(self):
-        for instrument in self.instruments:
-            instrument.process_input()
-        self.n_samples += 1
-        elapsed = time.time() - self.begin_time
-        if elapsed > 10:
-            if int(elapsed) % 10 == 0:
-                sr = self.n_samples / elapsed
-                # print("sampling rate:", sr)
+    def main_loop(self):
+        sampling_period = 1.0 / SAMPLING_RATE
+        wait_adjust = 0.0
+        next_read_time = time.time()
+        while True:
+            read_time = time.time()
+            for instrument in self.instruments:
+                instrument.process_input()
+            wait_adjust =  next_read_time - read_time  # adjust for the difference from expected time
+            next_read_time = read_time + sampling_period + wait_adjust
+            wait_time = next_read_time - time.time()
+            if wait_time > 0:
+                time.sleep(wait_time)
 
 
     # detect baseline noise and get a threshold value
@@ -105,8 +111,6 @@ class Instrument:
                 self.last_time = current_time
                 if channel:
                     channel.set_volume(volume)
-        # else:
-        #     print "delay play"
 
     def process_input(self):
         spi = self.pydrum.spi
@@ -203,9 +207,7 @@ if __name__ == "__main__":
     pydrum.add_instrument(Instrument(7, "drumkits/GMkit/kick_Dry_b.ogg", amplify=3.0, min_interval=0.1))
     try:
         # pydrum.calibrate(duration=5)
-        while True:
-            # btn_pressed = GPIO.input(7)
-            pydrum.process_input()
+        pydrum.main_loop()
     except KeyboardInterrupt:
         pass
     pydrum.finalize()
