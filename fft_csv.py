@@ -2,7 +2,7 @@
 import sys
 import csv
 import numpy as np
-# import scipy.signal as signal
+import scipy.signal as signal
 import matplotlib.pyplot as plt
 
 if __name__ == "__main__":
@@ -30,13 +30,19 @@ if __name__ == "__main__":
             else:
                 y.append(float(row[1]))
 
-        sampling_rate = len(y) / 15.0
-        half = int(np.round(len(y) / 2))
-        freq = np.fft.fftfreq(len(y))[1:half] * sampling_rate
-        fft = np.fft.fft(y)[1:half]
+        n = len(y)
+        sampling_rate = n / 15.0
+        half = n // 2
+        freq = np.fft.fftfreq(n)[1:half] * sampling_rate
+        fft = np.fft.fft(np.hamming(n) * y)[1:half]
         amplitude = np.abs(fft)
         valid_freq = freq[amplitude > 0.03 * np.max(amplitude)]
         print("band:", valid_freq[0], valid_freq[-1])
         #plt.plot(freq, fft)
+        plt.xlabel("Hz")
+        plt.ylabel("Amplitude")
         plt.plot(freq, abs(fft))
-        plt.show()
+        if len(sys.argv) > 3:
+            plt.savefig(sys.argv[3])
+        else:
+            plt.show()

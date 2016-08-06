@@ -46,7 +46,7 @@ class PyDrum:
         if elapsed > 10:
             if int(elapsed) % 10 == 0:
                 sr = self.n_samples / elapsed
-                print("sampling rate:", sr)
+                # print("sampling rate:", sr)
 
 
     # detect baseline noise and get a threshold value
@@ -188,20 +188,19 @@ class Hihat(Instrument):
 
 if __name__ == "__main__":
     GPIO.setmode(GPIO.BOARD)
-    # GPIO.setup(7, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
     pydrum = PyDrum()
-    pydrum.add_instrument(Instrument(0, "drumkits/GMkit/cra_Rock_a.ogg", amplify=3.0))
-    pydrum.add_instrument(Instrument(1, "drumkits/GMkit/tom_Rock_hi.ogg", amplify=2.0))
-    pydrum.add_instrument(Instrument(2, "drumkits/GMkit/cym_Rock_b.ogg", amplify=1.0))
-    hihat_pedal=Pedal(7, close_threshold=800.0)
+    pydrum.add_instrument(Instrument(1, "drumkits/GMkit/cra_Rock_a.ogg", amplify=3.0))
+    pydrum.add_instrument(Instrument(2, "drumkits/GMkit/tom_Rock_hi.ogg", amplify=2.0))
+    pydrum.add_instrument(Instrument(3, "drumkits/GMkit/cym_Rock_b.ogg", amplify=1.0))
+    hihat_pedal=Pedal(0, close_threshold=800.0)
     pydrum.add_instrument(hihat_pedal)
-    hihat = Hihat(3, pedal=hihat_pedal, sound_files=["drumkits/GMkit/hhc_Dry_a.ogg", "drumkits/UltraAcousticKit/HH_1_open.ogg"], amplify=2.0)
+    hihat = Hihat(4, pedal=hihat_pedal, sound_files=["drumkits/GMkit/hhc_Dry_a.ogg", "drumkits/UltraAcousticKit/HH_1_open.ogg"], amplify=2.0)
     # hihat = Hihat(3, pedal=hihat_pedal, sound_files=["drumkits/GMkit/hhc_Dry_a.ogg", "drumkits/GMkit/hhp_Dry_a.ogg"], amplify=1.0)
     pydrum.add_instrument(hihat)
-    pydrum.add_instrument(Instrument(4, "drumkits/GMkit/sn_Wet_b.ogg", amplify=1.5))
-    pydrum.add_instrument(Instrument(5, "drumkits/GMkit/tom_Rock_lo.ogg", amplify=1.0))
-    pydrum.add_instrument(Instrument(6, "drumkits/GMkit/kick_Dry_b.ogg", amplify=3.0, min_interval=0.1))
+    pydrum.add_instrument(Instrument(5, "drumkits/GMkit/sn_Wet_b.ogg", amplify=1.5))
+    pydrum.add_instrument(Instrument(6, "drumkits/GMkit/tom_Rock_lo.ogg", amplify=1.0))
+    pydrum.add_instrument(Instrument(7, "drumkits/GMkit/kick_Dry_b.ogg", amplify=3.0, min_interval=0.1))
     try:
         # pydrum.calibrate(duration=5)
         while True:
