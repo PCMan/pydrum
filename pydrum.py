@@ -25,7 +25,11 @@ class PyDrum:
         # set small buffer size to decrease latency
         # pygame.mixer.init(buffer=64)
         pygame.mixer.init(buffer=16)
-        pygame.mixer.set_num_channels(128)  # we need to play numerous sound files concurrently so increase # of channels.
+        # estimate the max number of concurrently played sound files:
+        # assume that one beat lasts for 3 second, and the max BPM we support is 400, then
+        # when playing the sound for one beat, the maximum number of concurrently played sound files is roughly
+        # 3 sec * (400 BPM / 60 sec) * 8 channels = 160
+        pygame.mixer.set_num_channels(160)  # we need to play numerous sound files concurrently so increase # of channels.
         self.instruments = []
         self.begin_time = time.time()
 
